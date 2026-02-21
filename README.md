@@ -1,11 +1,20 @@
 # Claude Code for Tutors — 教師的 AI 助理實戰課程
 
 > 免費開源課程，專為零程式背景的教師設計。
-> 21 堂課 / 5-7 小時 / 節省每週 15 小時行政時間
+> 20 堂課 / 5-7 小時 / 節省每週 15 小時行政時間
 
-## 課程簡介
+## 為什麼老師需要 AI 助理？
 
-這門課程以虛擬場景「**明日學院（Horizon Academy）**」為背景，你將扮演主角 **林欣怡老師**——一位有 8 年教齡的英文老師，在 AI 教練「小艾」的一對一指導下，從零開始學會用 Claude Code 處理教學行政工作。
+林欣怡老師有 8 年教齡、120 位學生，熱愛教學——但每週有超過 15 小時花在行政工作上。
+
+| 工作項目 | 現在花的時間 | 學完後 |
+|---------|------------|--------|
+| 學期末成績彙整 | 4 小時 | 10 分鐘 |
+| 每週家長回覆 | 2-3 小時 | 批次生成，各不相同 |
+| 社群貼文 | 1 小時/篇 | 有個人風格，不是 AI 味 |
+
+**Claude Code 跟一般 AI 聊天有什麼不同？**
+一般 AI 聊天幫你「想」——Claude Code 幫你「做」。它能直接讀取你的 Excel、整理資料夾、批次生成文件，不只是給建議。
 
 不需要寫程式、不需要技術背景，只要會打字就能上手。
 
@@ -21,17 +30,10 @@ cd claude-code-for-tutors
 
 # 3. 啟動 Claude Code，輸入指令開始第一課
 claude
-> /start-0-1
+> /start-1-1
 ```
 
 ## 課程目錄
-
-### Module 0：準備起飛（2 課，約 30 分鐘）
-
-| 課號 | 課程名稱 | 連結 |
-|------|----------|------|
-| 0-1 | 為什麼老師需要 AI 助理？ | [開始學習](modules/module-0-setup/lesson-0-1.md) |
-| 0-2 | 安裝與第一句話 | [開始學習](modules/module-0-setup/lesson-0-2.md) |
 
 ### Module 1：與 AI 說話的藝術（5 課，約 60-80 分鐘）
 
@@ -75,7 +77,14 @@ claude
 
 ## 授權
 
-本課程採用 [CC BY 4.0](LICENSE) 授權。歡迎自由使用、改編與分享，請註明出處。
+本課程的互動式教學框架（slash command 模組結構、`Say:` / `Check:` / `Action:` 教學腳本設計）參考自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)（CC BY-NC-ND 4.0）。
+
+本課程所有文字內容、教學情境、虛擬場景（明日學院 Horizon Academy）、角色設定及教材均為原創。
+
+依據原始授權規範，本課程採用 **CC BY-NC-ND 4.0** 授權：
+- ✅ 可自由分享（需署名）
+- ❌ 不得商業使用
+- ❌ 不得修改或製作衍生作品
 
 ---
 
@@ -102,14 +111,13 @@ cd claude-code-for-tutors
 
 # 3. Launch Claude Code and start the first lesson
 claude
-> /start-0-1
+> /start-1-1
 ```
 
 ## Course Outline
 
 | Module | Title | Lessons | Duration |
 |--------|-------|---------|----------|
-| 0 | Ready for Takeoff | 2 | ~30 min |
 | 1 | The Art of Talking to AI | 5 | ~60-80 min |
 | 2 | Daily Teacher Tasks | 6 | ~80-100 min |
 | 3 | Data-Driven Teaching | 5 | ~70-90 min |
@@ -117,4 +125,11 @@ claude
 
 ## License
 
-This course is licensed under [CC BY 4.0](LICENSE). Feel free to use, adapt, and share with attribution.
+The interactive teaching framework (slash command module structure, `Say:` / `Check:` / `Action:` teaching script pattern) is inspired by [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course) (CC BY-NC-ND 4.0).
+
+All written content, teaching scenarios, fictional setting (Horizon Academy), character designs, and course materials are original works.
+
+In accordance with the original license, this course is licensed under **CC BY-NC-ND 4.0**:
+- ✅ Free to share (with attribution)
+- ❌ No commercial use
+- ❌ No modifications or derivative works
