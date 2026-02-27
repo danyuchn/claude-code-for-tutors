@@ -37,6 +37,13 @@
 | Module 3 | 數據讓教學更聰明 | 5 課 |
 | Module 4 | 自動化你的教學工作流 | 4 課 |
 
+## .claude/ 子文檔索引
+
+| 文檔 | 內容 |
+|------|------|
+| `@.claude/SCRIPT_INSTRUCTIONS.md` | 教學腳本執行規則、逐字腳本約定、Check 點機制 |
+| `@.claude/horizon-academy/school-context.md` | 明日學院背景設定、師生角色、課程資料檔 |
+
 ## 可用指令
 
 | 指令 | 功能 |
