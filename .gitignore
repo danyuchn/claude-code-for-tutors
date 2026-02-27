@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Claude
+.claude/settings.local.json
+
+# Node
+node_modules/
