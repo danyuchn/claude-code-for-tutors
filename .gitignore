@@ -13,3 +13,7 @@ __pycache__/
 
 # Node
 node_modules/
+
+# Codex AI files
+.codex/
+AGENTS.md
