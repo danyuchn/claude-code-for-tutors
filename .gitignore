@@ -16,4 +16,5 @@ node_modules/
 
 # Codex AI files
 .codex/
+.agents/
 AGENTS.md

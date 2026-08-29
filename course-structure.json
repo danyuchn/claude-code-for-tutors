@@ -1,0 +1,260 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-29",
+  "modules": [
+    {
+      "id": "1",
+      "name": "與 AI 說話的藝術",
+      "lessons": [
+        {
+          "id": "1-1",
+          "title": "從原始成績找出需要關注的學生",
+          "command": "start-1-1",
+          "skillPath": ".claude/skills/start-1-1/SKILL.md",
+          "appendixPath": "modules/module-1-communication/lesson-1-1.md",
+          "estimatedMinutes": 12,
+          "output": "從月考成績與家長問卷交叉比對出的本週學生關注行動清單（本週優先聯繫／下週觀察兩層）",
+          "assets": [
+            "exam-scores.csv",
+            "parent-survey.csv"
+          ]
+        },
+        {
+          "id": "1-2",
+          "title": "感覺不對但說不清楚——讓 AI 幫你診斷",
+          "command": "start-1-2",
+          "skillPath": ".claude/skills/start-1-2/SKILL.md",
+          "appendixPath": "modules/module-1-communication/lesson-1-2.md",
+          "estimatedMinutes": 12,
+          "output": "Excel 平均數異常的診斷報告（依可能性排序的成因與驗證方法）",
+          "assets": []
+        },
+        {
+          "id": "1-3",
+          "title": "需求太複雜——把條件拆清楚，讓 AI 分別處理",
+          "command": "start-1-3",
+          "skillPath": ".claude/skills/start-1-3/SKILL.md",
+          "appendixPath": "modules/module-1-communication/lesson-1-3.md",
+          "estimatedMinutes": 12,
+          "output": "依語氣與學生狀況交叉出的四套家長通知信模板（2x2 矩陣）",
+          "assets": []
+        },
+        {
+          "id": "1-4",
+          "title": "AI 中途停頓——主動介入與即時調整",
+          "command": "start-1-4",
+          "skillPath": ".claude/skills/start-1-4/SKILL.md",
+          "appendixPath": "modules/module-1-communication/lesson-1-4.md",
+          "estimatedMinutes": 10,
+          "output": "分批產出並抽查驗收的 25 封個人化家長信",
+          "assets": []
+        },
+        {
+          "id": "1-5",
+          "title": "AI 碰不到你的資料——找到能力邊界，換路前行",
+          "command": "start-1-5",
+          "skillPath": ".claude/skills/start-1-5/SKILL.md",
+          "appendixPath": "modules/module-1-communication/lesson-1-5.md",
+          "estimatedMinutes": 10,
+          "output": "了解班級人際氣氛的替代方案清單，及依選定方案產出的具體工具（如匿名問卷）",
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "老師的日常任務",
+      "lessons": [
+        {
+          "id": "2-1",
+          "title": "批次產出個人化家長信",
+          "command": "start-2-1",
+          "skillPath": ".claude/skills/start-2-1/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-1.md",
+          "estimatedMinutes": 15,
+          "output": "依學生成績趨勢與家長備註個人化產出的 25 封月底家長信",
+          "assets": [
+            "exam-scores-oct.csv",
+            "priority-watchlist.csv"
+          ]
+        },
+        {
+          "id": "2-2",
+          "title": "去 AI 化，讓文字有人味",
+          "command": "start-2-2",
+          "skillPath": ".claude/skills/start-2-2/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-2.md",
+          "estimatedMinutes": 12,
+          "output": "去除 AI 感、改寫得更口語真實的班級經營貼文",
+          "assets": []
+        },
+        {
+          "id": "2-3",
+          "title": "記錯名字也能找到對的人",
+          "command": "start-2-3",
+          "skillPath": ".claude/skills/start-2-3/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-3.md",
+          "estimatedMinutes": 15,
+          "output": "從模糊記憶（性別、出席率、名字片段）逐步鎖定出的學生完整資料摘要",
+          "assets": [
+            "attendance.csv",
+            "student-roster.csv"
+          ]
+        },
+        {
+          "id": "2-4",
+          "title": "讓 AI 診斷問題，再設計針對性練習題",
+          "command": "start-2-4",
+          "skillPath": ".claude/skills/start-2-4/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-4.md",
+          "estimatedMinutes": 15,
+          "output": "依診斷出的時態錯誤類型設計的基礎／中階／進階三層次練習題組",
+          "assets": []
+        },
+        {
+          "id": "2-5",
+          "title": "讓 AI 整理命名混亂的教材資料夾",
+          "command": "start-2-5",
+          "skillPath": ".claude/skills/start-2-5/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-5.md",
+          "estimatedMinutes": 15,
+          "output": "教材資料夾命名規範，及疑似重複／過時檔案清單（待老師確認）",
+          "assets": [
+            "teaching-materials/"
+          ]
+        },
+        {
+          "id": "2-6",
+          "title": "把模糊記憶變成系統化搜尋策略",
+          "command": "start-2-6",
+          "skillPath": ".claude/skills/start-2-6/SKILL.md",
+          "appendixPath": "modules/module-2-daily-tasks/lesson-2-6.md",
+          "estimatedMinutes": 12,
+          "output": "跨信箱／雲端硬碟／人脈的系統化搜尋策略，及教材索引表模板",
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "數據讓教學更聰明",
+      "lessons": [
+        {
+          "id": "3-1",
+          "title": "從三個月資料找出張志豪真正的問題",
+          "command": "start-3-1",
+          "skillPath": ".claude/skills/start-3-1/SKILL.md",
+          "appendixPath": "modules/module-3-data-analysis/lesson-3-1.md",
+          "estimatedMinutes": 15,
+          "output": "整合成績、出席、作業繳交、考試行為後判讀出的張志豪問題診斷（pacing 而非學力問題）",
+          "assets": [
+            "zhang-zhihao-homework.csv",
+            "zhang-zhihao-observations.md",
+            "zhang-zhihao-scores.csv"
+          ]
+        },
+        {
+          "id": "3-2",
+          "title": "讓 AI 找出量化和質化之間的矛盾",
+          "command": "start-3-2",
+          "skillPath": ".claude/skills/start-3-2/SKILL.md",
+          "appendixPath": "modules/module-3-data-analysis/lesson-3-2.md",
+          "estimatedMinutes": 15,
+          "output": "家長問卷量化分數與質化意見的矛盾分析（找出分數掩蓋的溝通透明度問題）",
+          "assets": [
+            "parent-survey-comments.md",
+            "parent-survey-scores.csv"
+          ]
+        },
+        {
+          "id": "3-3",
+          "title": "換受眾，重新包裝同一份資料",
+          "command": "start-3-3",
+          "skillPath": ".claude/skills/start-3-3/SKILL.md",
+          "appendixPath": "modules/module-3-data-analysis/lesson-3-3.md",
+          "estimatedMinutes": 15,
+          "output": "把張志豪追蹤資料改包裝成輔導老師版摘要（三指標趨勢＋教師觀察＋建議）",
+          "assets": [
+            "zhang-zhihao-3-1-conclusion.md",
+            "zhang-zhihao-3-3-parent-update.md",
+            "zhang-zhihao-homework.csv",
+            "zhang-zhihao-observations.md",
+            "zhang-zhihao-scores.csv"
+          ]
+        },
+        {
+          "id": "3-4",
+          "title": "處理三份格式不同的雜亂資料",
+          "command": "start-3-4",
+          "skillPath": ".claude/skills/start-3-4/SKILL.md",
+          "appendixPath": "modules/module-3-data-analysis/lesson-3-4.md",
+          "estimatedMinutes": 15,
+          "output": "整合三份格式不同招生資料後的管道轉化率分析報告",
+          "assets": [
+            "enrolled-students.csv",
+            "referral-source-survey.csv",
+            "trial-class-registrations.csv"
+          ]
+        },
+        {
+          "id": "3-5",
+          "title": "從模糊的「感覺不對」診斷公式問題",
+          "command": "start-3-5",
+          "skillPath": ".claude/skills/start-3-5/SKILL.md",
+          "appendixPath": "modules/module-3-data-analysis/lesson-3-5.md",
+          "estimatedMinutes": 12,
+          "output": "從『感覺不對』診斷出的成績公式問題報告（含公式邏輯與異常值兩項成因）",
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "自動化你的教學工作流",
+      "lessons": [
+        {
+          "id": "4-1",
+          "title": "把月報流程變成一個可重複用的指令",
+          "command": "start-4-1",
+          "skillPath": ".claude/skills/start-4-1/SKILL.md",
+          "appendixPath": "modules/module-4-automation/lesson-4-1.md",
+          "estimatedMinutes": 20,
+          "output": "把月報流程封裝成的 `/monthly-report` 自訂指令草稿",
+          "assets": []
+        },
+        {
+          "id": "4-2",
+          "title": "用 AI 整理 200 份命名混亂的教材",
+          "command": "start-4-2",
+          "skillPath": ".claude/skills/start-4-2/SKILL.md",
+          "appendixPath": "modules/module-4-automation/lesson-4-2.md",
+          "estimatedMinutes": 18,
+          "output": "200 份教材的命名規則設計，及疑似重複／待確認檔案清單",
+          "assets": [
+            "teaching-materials/"
+          ]
+        },
+        {
+          "id": "4-3",
+          "title": "把你的經驗整理成 FAQ 知識庫指令",
+          "command": "start-4-3",
+          "skillPath": ".claude/skills/start-4-3/SKILL.md",
+          "appendixPath": "modules/module-4-automation/lesson-4-3.md",
+          "estimatedMinutes": 20,
+          "output": "分類清楚的家長溝通 FAQ 知識庫初版，及回答後更新的維護習慣",
+          "assets": []
+        },
+        {
+          "id": "4-4",
+          "title": "建立你的個人 AI 協作系統",
+          "command": "start-4-4",
+          "skillPath": ".claude/skills/start-4-4/SKILL.md",
+          "appendixPath": "modules/module-4-automation/lesson-4-4.md",
+          "estimatedMinutes": 25,
+          "output": "個人化 CLAUDE.md 初版，及三個自訂指令草稿（monthly-report、student-check、parent-faq）",
+          "assets": []
+        }
+      ]
+    }
+  ]
+}
