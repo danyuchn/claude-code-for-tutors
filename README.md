@@ -103,6 +103,13 @@ claude
 
 本課程所有文字內容、教學情境、虛擬場景（明日學院 Horizon Academy）、角色設定及教材均為原創。
 
+**原作者授權**：改編前已於 2026-02-22 透過 X 私訊向 Carl Vellotti 說明本課程的構想（K-12 教師版、繁體中文、免費開源、完整署名），並取得他的明確同意（「Go for it!」）。感謝 Carl 的開放與慷慨。
+
+- Carl 的 X：[@carlvellotti](https://x.com/carlvellotti)
+- 原版課程網站：[ccforpms.com](https://ccforpms.com)
+- 原版課程倉庫：[carlvellotti/claude-code-pm-course](https://github.com/carlvellotti/claude-code-pm-course)
+- Carl 的免費課程總站：[fullstackpm.com](https://fullstackpm.com)
+
 依據原始授權規範，本課程採用 **CC BY-NC-ND 4.0** 授權：
 - 可以：自由分享（需署名）
 - 不可以：商業使用
@@ -161,6 +168,13 @@ The `modules/` folder keeps this course's earlier shooting scripts (a reading-on
 The interactive teaching framework (slash command module structure, `Say:` / `Check:` / `Action:` teaching script pattern) is inspired by [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course) (CC BY-NC-ND 4.0).
 
 All written content, teaching scenarios, fictional setting (Horizon Academy), character designs, and course materials are original works.
+
+**Permission from the original author**: before adapting the framework, we described this project to Carl Vellotti (a K-12 teacher edition in Traditional Chinese, free, open-source, fully attributed) via X direct message on 2026-02-22 and received his explicit go-ahead ("Go for it!"). Thank you, Carl, for being open and generous with your work.
+
+- Carl on X: [@carlvellotti](https://x.com/carlvellotti)
+- Original course site: [ccforpms.com](https://ccforpms.com)
+- Original course repository: [carlvellotti/claude-code-pm-course](https://github.com/carlvellotti/claude-code-pm-course)
+- Carl's free course library: [fullstackpm.com](https://fullstackpm.com)
 
 In accordance with the original license, this course is licensed under **CC BY-NC-ND 4.0**:
 - Allowed: free to share (with attribution)
