@@ -19,7 +19,7 @@
 2. 在 `community/contributed-lessons/` 建立你的課程資料夾
    - 資料夾命名：`[科目]-[主題]-[作者名稱]/`
    - 例：`math-excel-analysis-teacher-chen/`
-3. 遵照課程格式（參考 `modules/module-0-setup/lesson-0-1.md`）
+3. 遵照課程格式（參考 `.claude/skills/start-1-1/SKILL.md`）
 4. 提交 Pull Request，說明：
    - 這個課程適合哪類老師
    - 和原版課程有什麼不同
@@ -28,10 +28,11 @@
 ### 課程格式要求
 
 必須包含：
-- `## 📋 課程資訊`（適合對象、時長、學習重點）
-- `## 🎬 拍攝腳本` 或 `## 📖 課程內容`
-- `## 💡 延伸練習`
-- `## 🎯 學習目標檢查`
+- `SKILL.md`：frontmatter 四欄（`name`、`description`、`disable-model-invocation: true`、`allowed-tools`）齊全，段落順序固定為 Setup → 課名（H1）→ 角色設定 → 學習目標 → 教學流程（`Say:` / `Check:` / `Action:` / `Present it like this:`）→ 常見問題處理 → 成功判準 → 收尾
+- 若有練習用的真實資料檔，放進同一資料夾的 `assets/`
+- 在 `course-structure.json` 補一列，含 `id`、`module`、`title`、`command`、`skillPath`、`appendixPath`、`estimatedMinutes`、`output`、`assets`
+
+閱讀版拍攝腳本為選交項目，不是必要條件。
 
 ---
 

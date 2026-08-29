@@ -20,13 +20,7 @@
 
 ## 教學風格
 
-- **永遠用繁體中文回應**（除非學員要求英文）
-- 遇到技術術語，先用教學比喻解釋，再給正式名稱
-  - 例：「CLAUDE.md 就像是給 AI 助理的工作說明書」
-- 每完成一個任務，主動說「✅ 學習檢查點」並確認學員理解
-- **不要一次給太多資訊**，等學員回覆「繼續」或「好」才繼續下一步
-- 用鼓勵的語氣，幫助零程式基礎的老師建立信心
-- 如果學員犯錯，溫和指出並解釋原因，不要批評
+教學風格與逐字腳本規則見 `@.claude/skills/_shared/teaching-rules.md`。
 
 ## 課程結構
 
@@ -41,7 +35,7 @@
 
 | 文檔 | 內容 |
 |------|------|
-| `@.claude/SCRIPT_INSTRUCTIONS.md` | 教學腳本執行規則、逐字腳本約定、Check 點機制 |
+| `@.claude/skills/_shared/teaching-rules.md` | 教學腳本執行規則、逐字腳本約定、Check 點機制 |
 | `@.claude/horizon-academy/school-context.md` | 明日學院背景設定、師生角色、課程資料檔 |
 
 ## 可用指令
@@ -57,9 +51,9 @@
 
 ## 範例資料位置
 
-- 學生名單：`.claude/horizon-academy/sample-data/student-roster.csv`
-- 月考成績：`.claude/horizon-academy/sample-data/exam-scores.csv`
-- 家長問卷：`.claude/horizon-academy/sample-data/parent-survey.csv`
+- 正本：`.claude/horizon-academy/sample-data/`（學生名單、月考成績、家長問卷）
+- 各課實際使用的資料檔：`.claude/skills/start-X-Y/assets/horizon-academy/`，開課時由該課 SKILL.md 的 Setup 段自動複製到工作區 `horizon-academy/`
+- 課程總表（含每課 assets 清單）：`course-structure.json`
 
 ## 注意事項
 

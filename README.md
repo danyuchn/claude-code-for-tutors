@@ -33,47 +33,69 @@ claude
 > /start-1-1
 ```
 
+每堂課結束後，先輸入 `/clear` 清空對話，再輸入下一堂課的指令。
+
 ## 課程目錄
 
 ### Module 1：與 AI 說話的藝術（5 課，約 60-80 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
-| 1-1 | 用口語說清楚需求 | [開始學習](modules/module-1-communication/lesson-1-1.md) |
-| 1-2 | 給 AI 看，不只是說（截圖/貼文字） | [開始學習](modules/module-1-communication/lesson-1-2.md) |
-| 1-3 | 長計畫 vs. 短指令 | [開始學習](modules/module-1-communication/lesson-1-3.md) |
-| 1-4 | 主動介入與即時調整 | [開始學習](modules/module-1-communication/lesson-1-4.md) |
-| 1-5 | 當 AI 問你問題 | [開始學習](modules/module-1-communication/lesson-1-5.md) |
+| 1-1 | 從原始成績找出需要關注的學生 | [開始學習](.claude/skills/start-1-1/SKILL.md) |
+| 1-2 | 感覺不對但說不清楚——讓 AI 幫你診斷 | [開始學習](.claude/skills/start-1-2/SKILL.md) |
+| 1-3 | 需求太複雜——把條件拆清楚，讓 AI 分別處理 | [開始學習](.claude/skills/start-1-3/SKILL.md) |
+| 1-4 | AI 中途停頓——主動介入與即時調整 | [開始學習](.claude/skills/start-1-4/SKILL.md) |
+| 1-5 | AI 碰不到你的資料——找到能力邊界，換路前行 | [開始學習](.claude/skills/start-1-5/SKILL.md) |
 
 ### Module 2：老師的日常任務（6 課，約 80-100 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
-| 2-1 | 批次生成個人化家長回覆 | [開始學習](modules/module-2-daily-tasks/lesson-2-1.md) |
-| 2-2 | 寫出有老師味的社群貼文 | [開始學習](modules/module-2-daily-tasks/lesson-2-2.md) |
-| 2-3 | 建立與更新學生資料庫 | [開始學習](modules/module-2-daily-tasks/lesson-2-3.md) |
-| 2-4 | 出作業、出考題不再傷腦筋 | [開始學習](modules/module-2-daily-tasks/lesson-2-4.md) |
-| 2-5 | 快速整理教學資料 | [開始學習](modules/module-2-daily-tasks/lesson-2-5.md) |
-| 2-6 | 搜尋和找回舊資料 | [開始學習](modules/module-2-daily-tasks/lesson-2-6.md) |
+| 2-1 | 批次產出個人化家長信 | [開始學習](.claude/skills/start-2-1/SKILL.md) |
+| 2-2 | 去 AI 化，讓文字有人味 | [開始學習](.claude/skills/start-2-2/SKILL.md) |
+| 2-3 | 記錯名字也能找到對的人 | [開始學習](.claude/skills/start-2-3/SKILL.md) |
+| 2-4 | 讓 AI 診斷問題，再設計針對性練習題 | [開始學習](.claude/skills/start-2-4/SKILL.md) |
+| 2-5 | 讓 AI 整理命名混亂的教材資料夾 | [開始學習](.claude/skills/start-2-5/SKILL.md) |
+| 2-6 | 把模糊記憶變成系統化搜尋策略 | [開始學習](.claude/skills/start-2-6/SKILL.md) |
 
 ### Module 3：數據讓教學更聰明（5 課，約 70-90 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
-| 3-1 | 讀懂學生成績背後的故事 | [開始學習](modules/module-3-data-analysis/lesson-3-1.md) |
-| 3-2 | 從家長滿意度調查找改進方向 | [開始學習](modules/module-3-data-analysis/lesson-3-2.md) |
-| 3-3 | 追蹤學生進度，一目瞭然 | [開始學習](modules/module-3-data-analysis/lesson-3-3.md) |
-| 3-4 | 招生數據分析，讓行銷更精準 | [開始學習](modules/module-3-data-analysis/lesson-3-4.md) |
-| 3-5 | 用截圖讓 AI 看懂你的問題 | [開始學習](modules/module-3-data-analysis/lesson-3-5.md) |
+| 3-1 | 從三個月資料找出張志豪真正的問題 | [開始學習](.claude/skills/start-3-1/SKILL.md) |
+| 3-2 | 讓 AI 找出量化和質化之間的矛盾 | [開始學習](.claude/skills/start-3-2/SKILL.md) |
+| 3-3 | 換受眾，重新包裝同一份資料 | [開始學習](.claude/skills/start-3-3/SKILL.md) |
+| 3-4 | 處理三份格式不同的雜亂資料 | [開始學習](.claude/skills/start-3-4/SKILL.md) |
+| 3-5 | 從模糊的「感覺不對」診斷公式問題 | [開始學習](.claude/skills/start-3-5/SKILL.md) |
 
 ### Module 4：自動化你的教學工作流（4 課，約 70-90 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
-| 4-1 | 設計你的第一個教學 Workflow | [開始學習](modules/module-4-automation/lesson-4-1.md) |
-| 4-2 | 批量處理：一次搞定 100 件事 | [開始學習](modules/module-4-automation/lesson-4-2.md) |
-| 4-3 | 建立學校的知識庫 | [開始學習](modules/module-4-automation/lesson-4-3.md) |
-| 4-4 | 你的專屬教學 AI 助理（畢業專案） | [開始學習](modules/module-4-automation/lesson-4-4.md) |
+| 4-1 | 把月報流程變成一個可重複用的指令 | [開始學習](.claude/skills/start-4-1/SKILL.md) |
+| 4-2 | 用 AI 整理 200 份命名混亂的教材 | [開始學習](.claude/skills/start-4-2/SKILL.md) |
+| 4-3 | 把你的經驗整理成 FAQ 知識庫指令 | [開始學習](.claude/skills/start-4-3/SKILL.md) |
+| 4-4 | 建立你的個人 AI 協作系統 | [開始學習](.claude/skills/start-4-4/SKILL.md) |
+
+## 可用指令
+
+| 指令 | 功能 |
+|------|------|
+| `/start-1-1` ~ `/start-1-5` | Module 1 各課 |
+| `/start-2-1` ~ `/start-2-6` | Module 2 各課 |
+| `/start-3-1` ~ `/start-3-5` | Module 3 各課 |
+| `/start-4-1` ~ `/start-4-4` | Module 4 各課 |
+| `/hint` | 給提示（不給完整答案） |
+| `/recap` | 複習本課重點 |
+
+## 延伸閱讀：影片拍攝腳本
+
+`modules/` 底下保留了這門課早期版本的拍攝腳本（閱讀版），是設計來拍攝教學影片用的文字稿，情境設定與互動版課程大致相同，但部分課程的主題已經和目前的互動版（上方課程目錄）不完全一致，僅供拍片或延伸閱讀參考：
+
+- [Module 1：與 AI 說話的藝術](modules/module-1-communication/)
+- [Module 2：老師的日常任務](modules/module-2-daily-tasks/)
+- [Module 3：數據讓教學更聰明](modules/module-3-data-analysis/)
+- [Module 4：自動化你的教學工作流](modules/module-4-automation/)
 
 ## 授權
 
@@ -82,16 +104,16 @@ claude
 本課程所有文字內容、教學情境、虛擬場景（明日學院 Horizon Academy）、角色設定及教材均為原創。
 
 依據原始授權規範，本課程採用 **CC BY-NC-ND 4.0** 授權：
-- ✅ 可自由分享（需署名）
-- ❌ 不得商業使用
-- ❌ 不得修改或製作衍生作品
+- 可以：自由分享（需署名）
+- 不可以：商業使用
+- 不可以：修改或製作衍生作品
 
 ---
 
 # Claude Code for Tutors — AI Assistant Workshop for Educators
 
 > Free and open-source course designed for teachers with zero programming background.
-> 21 lessons / 5-7 hours / Save 15 hours of admin work per week
+> 20 lessons / 5-7 hours / Save 15 hours of admin work per week
 
 ## About
 
@@ -114,6 +136,8 @@ claude
 > /start-1-1
 ```
 
+After each lesson, run `/clear` to reset the conversation before starting the next one.
+
 ## Course Outline
 
 | Module | Title | Lessons | Duration |
@@ -123,6 +147,15 @@ claude
 | 3 | Data-Driven Teaching | 5 | ~70-90 min |
 | 4 | Automate Your Teaching Workflow | 4 | ~70-90 min |
 
+## Appendix: Video Shooting Scripts
+
+The `modules/` folder keeps this course's earlier shooting scripts (a reading-only version written for recording instructional videos). The scenario setup mostly matches the interactive lessons above, but some lessons' topics have since diverged from the current interactive version — kept here for reference and video production only:
+
+- [Module 1: The Art of Talking to AI](modules/module-1-communication/)
+- [Module 2: Daily Teacher Tasks](modules/module-2-daily-tasks/)
+- [Module 3: Data-Driven Teaching](modules/module-3-data-analysis/)
+- [Module 4: Automate Your Teaching Workflow](modules/module-4-automation/)
+
 ## License
 
 The interactive teaching framework (slash command module structure, `Say:` / `Check:` / `Action:` teaching script pattern) is inspired by [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course) (CC BY-NC-ND 4.0).
@@ -130,6 +163,6 @@ The interactive teaching framework (slash command module structure, `Say:` / `Ch
 All written content, teaching scenarios, fictional setting (Horizon Academy), character designs, and course materials are original works.
 
 In accordance with the original license, this course is licensed under **CC BY-NC-ND 4.0**:
-- ✅ Free to share (with attribution)
-- ❌ No commercial use
-- ❌ No modifications or derivative works
+- Allowed: free to share (with attribution)
+- Not allowed: commercial use
+- Not allowed: modifications or derivative works

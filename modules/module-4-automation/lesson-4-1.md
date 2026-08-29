@@ -2,12 +2,6 @@
 
 把每月重複的月報告流程，變成一個可以一鍵執行的自訂指令——而且 AI 會在規劃階段就主動發現限制。
 
-## 課程來源
-改編自：`module-03-automation-06.md`（`claude-course/lessons/module-03-real-world/`）
-原始場景：使用者想打造每日 AI 新聞 Podcast 自動化工作流，Claude 先理解現況、搜尋資訊，使用者中途改方向（「不能用 tikhub 嗎？」），Claude 立刻調整；規劃階段主動發現 Google Podcast API 限制並詢問使用者
-核心 AI 行為：複雜口語需求 → 先理解現況 → 使用者中途改方向 → 發現 API 限制 → 主動提問
-驚喜時刻：小艾主動說「Google Classroom API 需要管理員權限，你有嗎？」——不是等到執行失敗才說，而是事先發現限制
-
 ## 課程資訊
 - **適合對象**：完成 Module 3 的學員
 - **所需時間**：20 分鐘
