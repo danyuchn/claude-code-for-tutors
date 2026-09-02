@@ -29,11 +29,7 @@
 - 個性：善於溝通，有策略思維
 
 ## 課程使用的資料檔案
-- `sample-data/student-roster.csv`：25 位學生名單
-- `sample-data/exam-scores.csv`：25 位學生三次月考成績
-- `sample-data/parent-survey.csv`：25 筆家長滿意度調查
-
-各課另有專屬資料檔，見 `course-structure.json` 的 `assets` 欄。
+各課資料檔在 `.claude/skills/start-X-Y/assets/horizon-academy/`，清單見 `course-structure.json` 的 `assets` 欄。
 
 ## 學校的 AI 工具政策
 - 鼓勵教師使用 AI 工具提升工作效率

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-08-29",
+  "lastUpdated": "2026-09-02",
   "modules": [
     {
       "id": "1",
@@ -231,7 +231,7 @@
           "estimatedMinutes": 18,
           "output": "200 份教材的命名規則設計，及疑似重複／待確認檔案清單",
           "assets": [
-            "teaching-materials/"
+            "teaching-materials-200/"
           ]
         },
         {

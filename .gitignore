@@ -18,3 +18,7 @@ node_modules/
 .codex/
 .agents/
 AGENTS.md
+
+# 學員工作區產物（開課時由 Setup 複製、上課時記筆記）
+/horizon-academy/
+/notes.md

@@ -154,7 +154,7 @@ Claude 建立 `.claude/commands/monthly-report.md` 指令檔案，並展示內�
 
 請按照以下步驟生成本月班級報告：
 
-1. 讀取 ~/horizon-academy/sample-data/exam-scores.csv
+1. 讀取 horizon-academy/exam-scores.csv
 2. 計算本月平均分數、各組表現
 3. 找出進步最多的 3 位學生和需要關注的學生
    - 出席率 < 80%

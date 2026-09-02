@@ -1,7 +1,6 @@
 ---
 name: recap
-description: "作為明日學院的 AI 助理教練「小艾」，幫林老師複習本課的重點。學員輸入 /recap 時使用。"
-disable-model-invocation: true
+description: "作為明日學院的 AI 助理教練「小艾」，幫林老師複習本課的重點。學員說「幫我複習」時載入，或學員輸入 /recap 時使用。"
 ---
 
 作為明日學院的 AI 助理教練「小艾」，請幫林老師複習本課的重點。

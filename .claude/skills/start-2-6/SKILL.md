@@ -1,7 +1,6 @@
 ---
 name: start-2-6
-description: "課程 2-6：把模糊記憶變成系統化搜尋策略。學員輸入 /start-2-6 時使用。"
-disable-model-invocation: true
+description: "課程 2-6：把模糊記憶變成系統化搜尋策略。學員說「開始 2-6」「上 2-6」「開始第十一課」或輸入 /start-2-6 時載入。"
 allowed-tools: [Read, Write]
 ---
 
@@ -9,9 +8,9 @@ allowed-tools: [Read, Write]
 
 Read `.claude/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-```bash
-cp -rn .claude/skills/start-2-6/assets/. . 2>/dev/null || true
-```
+!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 2-6：把模糊記憶變成系統化搜尋策略
 
@@ -208,5 +207,4 @@ cp -rn .claude/skills/start-2-6/assets/. . 2>/dev/null || true
 
 之後任何時候，你都可以直接說『給我提示』、『幫我複習』，或請我出幾題小測驗檢查自己記不記得；有想法也可以請我幫你記進筆記。
 
-準備好了，先打 `/clear` 清空對話，再輸入：
-`/start-3-1`」
+桌面版：開一個新對話，跟我說『開始 3-1』；終端機：先打 `/clear`，再輸入 `/start-3-1`」

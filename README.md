@@ -1,7 +1,7 @@
 # Claude Code for Tutors — 教師的 AI 助理實戰課程
 
 > 免費開源課程，專為零程式背景的教師設計。
-> 20 堂課 / 5-7 小時 / 節省每週 15 小時行政時間
+> 20 堂課 / 約 5 小時 / 節省每週 15 小時行政時間
 
 ## 為什麼老師需要 AI 助理？
 
@@ -20,9 +20,28 @@
 
 ## 快速開始
 
+**桌面版（推薦，不需要懂技術）**
+
+1. 到 [GitHub 頁面](https://github.com/danyuchn/claude-code-for-tutors)按綠色「Code」→「Download ZIP」，解壓縮到「文件」資料夾（不需要 git）
+2. 打開 Claude 桌面版，上方切到「Code」分頁，選剛解壓縮的資料夾
+3. 在對話框打「開始第一課」
+
+如果它沒有開始上課，把這句話貼給它：「請讀 `.claude/skills/start-1-1/SKILL.md`，照裡面的腳本一步一步教我，不要跳步。」
+
+需要 Claude Pro 以上的付費方案。
+
+上完一堂，開一個新對話再說「開始下一課」。
+
+進階的終端機安裝方式見下方「進階：終端機版」。
+
+## 進階：終端機版
+
 ```bash
-# 1. 安裝 Claude Code
-npm install -g @anthropic-ai/claude-code
+# 1. 安裝 Claude Code（Mac）
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Windows（PowerShell）
+irm https://claude.ai/install.ps1 | iex
 
 # 2. Clone 課程倉庫
 git clone https://github.com/danyuchn/claude-code-for-tutors.git
@@ -33,11 +52,11 @@ claude
 > /start-1-1
 ```
 
-每堂課結束後，先輸入 `/clear` 清空對話，再輸入下一堂課的指令。
+每堂課結束後，先 `/clear` 再輸入下一堂課的指令。
 
 ## 課程目錄
 
-### Module 1：與 AI 說話的藝術（5 課，約 60-80 分鐘）
+### Module 1：與 AI 說話的藝術（5 課，約 60 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -77,16 +96,11 @@ claude
 | 4-3 | 把你的經驗整理成 FAQ 知識庫指令 | [開始學習](.claude/skills/start-4-3/SKILL.md) |
 | 4-4 | 建立你的個人 AI 協作系統 | [開始學習](.claude/skills/start-4-4/SKILL.md) |
 
-## 可用指令
+## 怎麼開課
 
-| 指令 | 功能 |
-|------|------|
-| `/start-1-1` ~ `/start-1-5` | Module 1 各課 |
-| `/start-2-1` ~ `/start-2-6` | Module 2 各課 |
-| `/start-3-1` ~ `/start-3-5` | Module 3 各課 |
-| `/start-4-1` ~ `/start-4-4` | Module 4 各課 |
-| `/hint` | 給提示（不給完整答案） |
-| `/recap` | 複習本課重點 |
+| 桌面版 | 終端機 |
+|--------|--------|
+| 在對話框說「開始第一課」或「上 1-1」；「下一課」也可以 | `/start-1-1`、`/hint`、`/recap` |
 
 ## 延伸閱讀：影片拍攝腳本
 
@@ -120,7 +134,7 @@ claude
 # Claude Code for Tutors — AI Assistant Workshop for Educators
 
 > Free and open-source course designed for teachers with zero programming background.
-> 20 lessons / 5-7 hours / Save 15 hours of admin work per week
+> 20 lessons / about 5 hours / Save 15 hours of admin work per week
 
 ## About
 
@@ -130,9 +144,28 @@ No coding skills required. If you can type, you can do this.
 
 ## Quick Start
 
+**Desktop app (recommended, no technical skills needed)**
+
+1. On the [GitHub page](https://github.com/danyuchn/claude-code-for-tutors), click the green "Code" button → "Download ZIP", then unzip it into your Documents folder (no git required)
+2. Open the Claude desktop app, switch to the "Code" tab at the top, and select the unzipped folder
+3. In the chat box, type "start the first lesson"
+
+If it doesn't start teaching, paste this: "Please read `.claude/skills/start-1-1/SKILL.md` and walk me through it step by step, without skipping steps."
+
+Requires a Claude Pro plan or above.
+
+After each lesson, open a new conversation and say "start the next lesson".
+
+For the advanced terminal setup, see "Advanced: Terminal Version" below.
+
+## Advanced: Terminal Version
+
 ```bash
-# 1. Install Claude Code
-npm install -g @anthropic-ai/claude-code
+# 1. Install Claude Code (Mac)
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Windows (PowerShell)
+irm https://claude.ai/install.ps1 | iex
 
 # 2. Clone the course repository
 git clone https://github.com/danyuchn/claude-code-for-tutors.git
@@ -143,13 +176,13 @@ claude
 > /start-1-1
 ```
 
-After each lesson, run `/clear` to reset the conversation before starting the next one.
+After each lesson, run `/clear` before starting the next one.
 
 ## Course Outline
 
 | Module | Title | Lessons | Duration |
 |--------|-------|---------|----------|
-| 1 | The Art of Talking to AI | 5 | ~60-80 min |
+| 1 | The Art of Talking to AI | 5 | ~60 min |
 | 2 | Daily Teacher Tasks | 6 | ~80-100 min |
 | 3 | Data-Driven Teaching | 5 | ~70-90 min |
 | 4 | Automate Your Teaching Workflow | 4 | ~70-90 min |

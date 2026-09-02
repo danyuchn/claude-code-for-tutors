@@ -38,20 +38,21 @@
 | `@.claude/skills/_shared/teaching-rules.md` | 教學腳本執行規則、逐字腳本約定、Check 點機制 |
 | `@.claude/horizon-academy/school-context.md` | 明日學院背景設定、師生角色、課程資料檔 |
 
-## 可用指令
+## 怎麼開課
 
-| 指令 | 功能 |
-|------|------|
-| `/start-1-1` ~ `/start-1-5` | Module 1 各課 |
-| `/start-2-1` ~ `/start-2-6` | Module 2 各課 |
-| `/start-3-1` ~ `/start-3-5` | Module 3 各課 |
-| `/start-4-1` ~ `/start-4-4` | Module 4 各課 |
-| `/hint` | 給提示（不給完整答案） |
-| `/recap` | 複習本課重點 |
+| 桌面版 | 終端機 |
+|--------|--------|
+| 在對話框說「開始第一課」或「上 1-1」；「下一課」也可以 | `/start-1-1`、`/hint`、`/recap` |
+
+## 課程路由
+
+- 學員說要開始／上某一課 → 載入對應 `start-X-Y` skill
+- 學員說「下一課」→ 讀 `course-structure.json` 找目前這課的下一列
+- 學員沒說哪一課 → 問一句
+- 學員說「給我提示」「幫我複習」→ 載入 hint／recap
 
 ## 範例資料位置
 
-- 正本：`.claude/horizon-academy/sample-data/`（學生名單、月考成績、家長問卷）
 - 各課實際使用的資料檔：`.claude/skills/start-X-Y/assets/horizon-academy/`，開課時由該課 SKILL.md 的 Setup 段自動複製到工作區 `horizon-academy/`
 - 課程總表（含每課 assets 清單）：`course-structure.json`
 

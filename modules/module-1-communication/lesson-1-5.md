@@ -40,7 +40,7 @@
 我就能幫你分析家長滿意度：
 
 1. LINE 對話截圖——直接貼到這裡，我可以讀取圖片內容
-2. 家長問卷結果（.csv 或 .xlsx）——我看到 sample-data 資料夾裡
+2. 家長問卷結果（.csv 或 .xlsx）——我看到 horizon-academy 資料夾裡
    已經有一份 parent-survey.csv，要不要我先看看？
 3. 你覺得有問題的幾則對話，直接貼文字給我
 
@@ -70,11 +70,11 @@ AI 的「拒絕」= 三條出路
 
 **Claude 回應：**
 ```
-[Tool: Read] .claude/horizon-academy/sample-data/parent-survey.csv
+[Tool: Read] horizon-academy/parent-survey.csv
 
 我讀到了 20 位家長的問卷回覆。讓我同時讀取學生成績資料來做交叉分析。
 
-[Tool: Read] .claude/horizon-academy/sample-data/exam-scores.csv
+[Tool: Read] horizon-academy/exam-scores.csv
 ```
 
 **旁白：**

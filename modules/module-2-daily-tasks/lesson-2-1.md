@@ -56,9 +56,9 @@ AI 批次生成不是「複製貼上換名字」——它能從多份資料交�
 ```
 好的，讓我先讀取相關資料。
 
-[Tool: Read] .claude/horizon-academy/sample-data/exam-scores.csv
-[Tool: Read] .claude/horizon-academy/sample-data/student-roster.csv
-[Tool: Read] .claude/horizon-academy/sample-data/parent-survey.csv
+[Tool: Read] horizon-academy/exam-scores.csv
+[Tool: Read] horizon-academy/student-roster.csv
+[Tool: Read] horizon-academy/parent-survey.csv
 
 我找到了 25 位學生的完整資料，包含：
 - 三次月考成績與成績趨勢

@@ -1,7 +1,6 @@
 ---
 name: start-1-4
-description: "課程 1-4：AI 中途停頓——主動介入與即時調整。學員輸入 /start-1-4 時使用。"
-disable-model-invocation: true
+description: "課程 1-4：AI 中途停頓——主動介入與即時調整。學員說「開始 1-4」「上 1-4」「開始第四課」或輸入 /start-1-4 時載入。"
 allowed-tools: [Read, Write, Bash, Glob, Grep]
 ---
 
@@ -9,9 +8,9 @@ allowed-tools: [Read, Write, Bash, Glob, Grep]
 
 Read `.claude/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-```bash
-cp -rn .claude/skills/start-1-4/assets/. . 2>/dev/null || true
-```
+!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 1-4：AI 中途停頓——主動介入與即時調整
 
@@ -180,5 +179,4 @@ AI 有一樣的限制，叫做**上下文窗口**。一次丟太多資料進去�
 
 之後任何時候，你都可以直接說『給我提示』、『幫我複習』，或請我出幾題小測驗檢查自己記不記得；有想法也可以請我幫你記進筆記。
 
-準備好了，先打 `/clear` 清空對話，再輸入：
-`/start-1-5`」
+桌面版：開一個新對話，跟我說『開始 1-5』；終端機：先打 `/clear`，再輸入 `/start-1-5`」

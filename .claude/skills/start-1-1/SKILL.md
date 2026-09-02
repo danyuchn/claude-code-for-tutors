@@ -1,7 +1,6 @@
 ---
 name: start-1-1
-description: "課程 1-1：從原始成績找出需要關注的學生。學員輸入 /start-1-1 時使用。"
-disable-model-invocation: true
+description: "課程 1-1：從原始成績找出需要關注的學生。學員說「開始 1-1」「上 1-1」「開始第一課」或輸入 /start-1-1 時載入。"
 allowed-tools: [Read, Write, Bash, Glob, Grep]
 ---
 
@@ -9,9 +8,9 @@ allowed-tools: [Read, Write, Bash, Glob, Grep]
 
 Read `.claude/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-```bash
-cp -rn .claude/skills/start-1-1/assets/. . 2>/dev/null || true
-```
+!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 1-1：從原始成績找出需要關注的學生
 
@@ -34,7 +33,7 @@ cp -rn .claude/skills/start-1-1/assets/. . 2>/dev/null || true
 
 「林老師，新學期第三週了。
 
-你桌上現在有三份資料：25 位學生的三次月考成績、基本資料、還有期初家長問卷。你隱約覺得『有幾個孩子最近狀況不太對』——但你盯著一欄欄數字，實在看不出誰在退步、誰需要關心。
+你桌上現在有兩份資料：25 位學生的三次月考成績，還有期初家長問卷。你隱約覺得『有幾個孩子最近狀況不太對』——但你盯著一欄欄數字，實在看不出誰在退步、誰需要關心。
 
 這就是我們今天要解決的事：**從一堆數字裡，找出需要你這週採取行動的學生。**
 
@@ -75,9 +74,9 @@ cp -rn .claude/skills/start-1-1/assets/. . 2>/dev/null || true
 
 **Say:**
 
-「好，現在把家長滿意度 ≤ 3 分、或有具體擔憂的，疊在成績趨勢上面——」
+「好，現在把家長滿意度 3 分以下、或留言明確講到負面狀況的，疊在成績趨勢上面——」
 
-**Action:** Read `horizon-academy/parent-survey.csv`，交叉對照成績下滑名單，找出成績下滑且家長有警訊的學生
+**Action:** Read `horizon-academy/parent-survey.csv`，交叉對照成績下滑名單，找出成績下滑且滿意度 3 分以下、或留言明確講到負面狀況的學生
 
 **Present it like this:**
 
@@ -151,7 +150,7 @@ cp -rn .claude/skills/start-1-1/assets/. . 2>/dev/null || true
 ## 常見問題處理
 
 **學生問：「這樣真的找得準嗎？」**
-→ 「這是第一步篩選，幫你從 25 人縮到 3-5 人。最終判斷還是你來——AI 幫你省掉翻資料的時間，不替你做決定。」
+→ 「這是第一步篩選，幫你從 25 人縮到不到一半，再從裡面挑出真正要先聯繫的兩三位。最終判斷還是你來——AI 幫你省掉翻資料的時間，不替你做決定。」
 
 **學生問：「那出席率呢？」**
 → 「好問題！這份資料裡出席率沒有獨立欄位，但家長問卷裡有部分線索（像吳建宏家裡有狀況）。下一課我們會練習用更模糊的資訊來問 AI。」
@@ -173,5 +172,4 @@ cp -rn .claude/skills/start-1-1/assets/. . 2>/dev/null || true
 
 之後任何時候，你都可以直接說『給我提示』、『幫我複習』，或請我出幾題小測驗檢查自己記不記得；有想法也可以請我幫你記進筆記。
 
-準備好了，先打 `/clear` 清空對話，再輸入：
-`/start-1-2`」
+桌面版：開一個新對話，跟我說『開始 1-2』；終端機：先打 `/clear`，再輸入 `/start-1-2`」

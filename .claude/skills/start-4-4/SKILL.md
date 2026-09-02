@@ -1,7 +1,6 @@
 ---
 name: start-4-4
-description: "課程 4-4：建立你的個人 AI 協作系統。學員輸入 /start-4-4 時使用。"
-disable-model-invocation: true
+description: "課程 4-4：建立你的個人 AI 協作系統。學員說「開始 4-4」「上 4-4」「開始第二十課」或輸入 /start-4-4 時載入。"
 allowed-tools: [Read, Write, Bash]
 ---
 
@@ -9,9 +8,9 @@ allowed-tools: [Read, Write, Bash]
 
 Read `.claude/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-```bash
-cp -rn .claude/skills/start-4-4/assets/. . 2>/dev/null || true
-```
+!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 4-4：建立你的個人 AI 協作系統
 
