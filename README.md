@@ -113,9 +113,27 @@ claude
 
 ## 授權
 
-本課程的互動式教學框架（slash command 模組結構、`Say:` / `Check:` / `Action:` 教學腳本設計）參考自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)（CC BY-NC-ND 4.0）。
+本課程的互動式教學框架參考自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)（CC BY-NC-ND 4.0）。
 
-本課程所有文字內容、教學情境、虛擬場景（明日學院 Horizon Academy）、角色設定及教材均為原創。
+**沿用自原版的部分**（完整列出，不只是「參考」）：
+
+- `.claude/skills/<課程 id>/SKILL.md` ＋ `assets/` 的目錄骨架，與一堂課一個 slash command 的組織方式
+- 教學腳本標記：`Say:`（逐字輸出）、`Check:`（停下等學員回應）、`Action:`（AI 自己執行）、`Present it like this:`（輸出格式）
+- 課程檔的段落骨架：Setup／角色設定／學習目標／教學流程（分 Step）／常見問題處理／成功判準／收尾
+- `_shared/teaching-rules.md` 由每一支 SKILL.md 引用的共用規則架構
+- 核心交付模型：**學員全程不碰終端機，所有操作由 AI 執行**；以桌面版為主要教學環境
+- 「不要說破腳本」這條規則本身（不宣告自己在照腳本走、不外洩教學指引）
+- `course-structure.json` 這個課程清單檔的角色與檔名（schema 已重新設計）
+
+**本課程的原創部分**：
+
+- 20 堂課的全部文字內容、教學情境與對白（與原版無任何文本重複）
+- 虛擬場景明日學院（Horizon Academy）、教學助理「小艾」的人格設定、林欣怡老師與 25 位學生的完整設定
+- 全部教材資產：成績單、出席紀錄、家長問卷、招生資料等 CSV，以及刻意設計成命名混亂的 200 餘份教材檔
+- 中文教學法規則（先比喻後術語、不一次給太多、學員犯錯溫和指出、為零程式基礎者建立信心）
+- **課程本身教的協作方法論**：原版 Foundation 是 Claude Code 的功能導覽（Agents、Sub-agents、Project Memory、鍵盤快捷鍵）；本課程改為教「AI 會怎麼失敗、你怎麼救回來」——講不出問題時怎麼診斷、需求太複雜怎麼拆、AI 中途停頓怎麼介入、碰到能力邊界怎麼換路、從模糊記憶怎麼收斂。20 堂中只有 4-4（CLAUDE.md 與自訂指令）與原版主題有實質對應
+- `recap` 與 `hint` 兩支獨立 skill（原版只把它列為「學員可以隨口要求的事」，未實作）
+- 移除原版與其商業平台的所有綁定（CLI 工具、帳號登入、進度同步、證書發放），改為完全離線可自學
 
 **原作者授權**：改編前已於 2026-02-22 透過 X 私訊向 Carl Vellotti 說明本課程的構想（K-12 教師版、繁體中文、免費開源、完整署名），並取得他的明確同意（「Go for it!」）。感謝 Carl 的開放與慷慨。
 
@@ -198,9 +216,27 @@ The `modules/` folder keeps this course's earlier shooting scripts (a reading-on
 
 ## License
 
-The interactive teaching framework (slash command module structure, `Say:` / `Check:` / `Action:` teaching script pattern) is inspired by [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course) (CC BY-NC-ND 4.0).
+The interactive teaching framework is adapted from [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course) (CC BY-NC-ND 4.0).
 
-All written content, teaching scenarios, fictional setting (Horizon Academy), character designs, and course materials are original works.
+**Carried over from the original** (listed in full, not just "inspired by"):
+
+- The `.claude/skills/<lesson-id>/SKILL.md` + `assets/` directory layout, and the one-slash-command-per-lesson organisation
+- The teaching-script markers: `Say:` (deliver verbatim), `Check:` (stop and wait for the learner), `Action:` (the agent performs it), `Present it like this:` (output format)
+- The lesson-file section skeleton: Setup / Your Role / Learning Objectives / Teaching Flow (in Steps) / Common Questions / Success Criteria / Sendoff
+- The shared-rules architecture: a `_shared/teaching-rules.md` that every SKILL.md reads first
+- The core delivery model: **the learner never touches a terminal; the agent performs every action**, taught primarily in the desktop app
+- The "never break character about the script" rule itself
+- The role and filename of `course-structure.json` as the course manifest (the schema was redesigned)
+
+**Original to this course**:
+
+- All written content, teaching scenarios, and dialogue across the 20 lessons (no textual overlap with the original)
+- The fictional setting (Horizon Academy), the "Xiao-Ai" teaching-assistant persona, and the full cast of Ms. Lin and 25 students
+- Every course asset: exam scores, attendance records, parent surveys, enrolment data, plus 200+ deliberately messy teaching files
+- The Chinese-language pedagogy rules (metaphor before jargon, small steps, correct gently, build confidence for non-programmers)
+- **The collaboration methodology the course actually teaches**: the original's Foundation is a feature tour of Claude Code (Agents, Sub-agents, Project Memory, keyboard navigation). This course teaches how the AI fails and how you recover — diagnosing a problem you cannot articulate, decomposing tangled requirements, intervening when the agent stalls, recognising a capability boundary and routing around it, converging from a vague memory. Only lesson 4-4 (CLAUDE.md and custom commands) maps onto the original's topics
+- The standalone `recap` and `hint` skills (the original lists these only as things a learner may ask for; they are not implemented)
+- Removal of every dependency on the original's commercial platform (its CLI, account login, progress sync, and certificates), making this course fully self-contained and offline-capable
 
 **Permission from the original author**: before adapting the framework, we described this project to Carl Vellotti (a K-12 teacher edition in Traditional Chinese, free, open-source, fully attributed) via X direct message on 2026-02-22 and received his explicit go-ahead ("Go for it!"). Thank you, Carl, for being open and generous with your work.
 
