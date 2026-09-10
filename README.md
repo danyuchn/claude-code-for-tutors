@@ -8,6 +8,8 @@
 
 本課程的互動式教學框架改編自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)，經原作者同意。哪些沿用自原版、哪些是本課程原創，逐項列在[授權](#授權)。
 
+課程作者：Dustin Yuchen Teng（[Dustin's AI Lab](https://agentcrew.cc/blog)）
+
 ## 為什麼老師需要 AI 助理？
 
 林欣怡老師有 8 年教齡、120 位學生，熱愛教學——但每週有超過 15 小時花在行政工作上。
@@ -184,6 +186,8 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 > 24 core lessons + 3 optional / about 8.8 hours / Save 15 hours of admin work per week
 
 The interactive teaching framework is adapted, with the original author's permission, from [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course). What is carried over and what is original to this course is listed item by item under [License](#license).
+
+Course author: Dustin Yuchen Teng ([Dustin's AI Lab](https://agentcrew.cc/blog))
 
 ## About
 
