@@ -1,7 +1,7 @@
 # Claude Code for Tutors — 教師的 AI 助理實戰課程
 
 > 免費開源課程，專為零程式背景的教師設計。
-> 24 堂課 / 約 7.6 小時 / 節省每週 15 小時行政時間
+> 主線 24 堂 ＋ 選修 3 堂 / 約 8.8 小時 / 節省每週 15 小時行政時間
 
 ## 為什麼老師需要 AI 助理？
 
@@ -148,7 +148,7 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 
 **本課程的原創部分**：
 
-- 24 堂課的全部文字內容、教學情境與對白（與原版無任何文本重複）
+- 27 堂課（主線 24 ＋ 選修 3）的全部文字內容、教學情境與對白（與原版無任何文本重複）
 - 虛擬場景明日學院（Horizon Academy）、教學助理「小艾」的人格設定、林欣怡老師與 25 位學生的完整設定
 - 全部教材資產：成績單、出席紀錄、家長問卷、招生資料等 CSV，以及刻意設計成命名混亂的 200 餘份教材檔
 - 中文教學法規則（先比喻後術語、不一次給太多、學員犯錯溫和指出、為零程式基礎者建立信心）
@@ -173,7 +173,7 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 # Claude Code for Tutors — AI Assistant Workshop for Educators
 
 > Free and open-source course designed for teachers with zero programming background.
-> 24 lessons / about 7.6 hours / Save 15 hours of admin work per week
+> 24 core lessons + 3 optional / about 8.8 hours / Save 15 hours of admin work per week
 
 ## About
 
@@ -261,7 +261,7 @@ The interactive teaching framework is adapted from [Carl Vellotti](https://x.com
 
 **Original to this course**:
 
-- All written content, teaching scenarios, and dialogue across the 24 lessons (no textual overlap with the original)
+- All written content, teaching scenarios, and dialogue across all 27 lessons (24 core + 3 optional; no textual overlap with the original)
 - The fictional setting (Horizon Academy), the "Xiao-Ai" teaching-assistant persona, and the full cast of Ms. Lin and 25 students
 - Every course asset: exam scores, attendance records, parent surveys, enrolment data, plus 200+ deliberately messy teaching files
 - The Chinese-language pedagogy rules (metaphor before jargon, small steps, correct gently, build confidence for non-programmers)
