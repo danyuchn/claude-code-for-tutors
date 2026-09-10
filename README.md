@@ -107,13 +107,13 @@ claude
 
 ### 選修課（3 課，約 75 分鐘）
 
-補齊原版有、主線刻意不教的三項能力。**都不在主線順序裡，上不上都不影響主線的完整性**——因為它們各自有主線承諾之外的門檻，所以獨立出來讓你自己決定。每堂結束都會指回主線 4-1。
+補齊原版有、主線刻意不教的三項能力。**都不在主線順序裡，上不上都不影響主線的完整性**——因為它們各自有主線承諾之外的門檻，所以獨立出來讓你自己決定。上完之後接你原本的進度往下走，不用重上。
 
 | 課號 | 課程名稱 | 前置 | 你要先知道的門檻 | 連結 |
 |------|----------|------|----------------|------|
 | 5-4 | 真的把圖生出來 | 5-1 | Google 的生圖模型**沒有免費額度**，要先開通付費才能用 | [開始學習](.claude/skills/start-5-4/SKILL.md) |
-| 4-6 | 改壞了能回頭：把你的東西存進 GitHub | 4-2 | 需要註冊 GitHub 帳號（免費），電腦上要有 `git` | [開始學習](.claude/skills/start-4-6/SKILL.md) |
-| 4-7 | 把小工具放上網：家長點連結就能開 | 4-6 | 免費方案的公開發布**全世界都看得到**，所以課程會先帶你把學生姓名換成代號 | [開始學習](.claude/skills/start-4-7/SKILL.md) |
+| 4-6 | 改壞了能回頭：把你的東西存進 GitHub | 4-2 | 需要註冊 GitHub 帳號（免費），電腦上要有 `git` 與 `gh`（GitHub CLI） | [開始學習](.claude/skills/start-4-6/SKILL.md) |
+| 4-7 | 把小工具放上網：同事點連結就能開 | 4-6（硬性） | 發布出去的網站**全世界都看得到**，而且這件事花錢也解決不了（要限定觀看者得用企業方案），所以課程會先帶你把學生姓名換成代號 | [開始學習](.claude/skills/start-4-7/SKILL.md) |
 
 ## 怎麼開課
 
@@ -228,13 +228,13 @@ After each lesson, run `/clear` before starting the next one.
 | 4 | Automate Your Teaching Workflow | 5 | ~126 min |
 | — | *Optional lessons (outside the main track)* | 3 | ~75 min |
 
-**Optional lessons** cover the three capabilities the original teaches but the main track deliberately leaves out, because each carries a cost the main track promises not to impose. Skipping them costs you nothing in the main track; each one ends by pointing back to 4-1.
+**Optional lessons** cover the three capabilities the original teaches but the main track deliberately leaves out, because each carries a cost the main track promises not to impose. Skipping them costs you nothing in the main track; each one ends by pointing you back to wherever you left off.
 
 | Lesson | Title | Requires | Up-front cost |
 |--------|-------|----------|---------------|
 | 5-4 | Actually generate the image | 5-1 | Google's image models have **no free tier**; paid billing required |
-| 4-6 | Undo a bad change: put your work on GitHub | 4-2 | A free GitHub account, and `git` installed |
-| 4-7 | Put your tool online | 4-6 | Free-plan publishing is **visible to everyone**, so the lesson replaces student names with codes first |
+| 4-6 | Undo a bad change: put your work on GitHub | 4-2 | A free GitHub account, plus `git` and `gh` installed |
+| 4-7 | Put your tool online | 4-6 (required) | A published site is **visible to everyone**, and paying does not change that (restricting viewers needs an enterprise plan), so the lesson replaces student names with codes first |
 
 ## Appendix: Video Shooting Scripts
 

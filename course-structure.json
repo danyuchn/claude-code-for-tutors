@@ -312,11 +312,9 @@
       "estimatedMinutes": 24,
       "optional": true,
       "output": "從 5-1 寫好的描述，用 Gemini API 實際產出一張圖，並學會金鑰保管與花費控管",
-      "assets": [
-        "unit6-image-prompt.md（由 5-1 產出）"
-      ],
+      "assets": [],
       "prerequisite": "5-1",
-      "returnsTo": "4-1"
+      "returnsTo": "5-2"
     },
     {
       "id": "4-6",
@@ -328,11 +326,11 @@
       "output": "把工作資料夾變成有存檔點的私人倉庫，並實際示範從改壞的版本救回來",
       "assets": [],
       "prerequisite": "4-2",
-      "returnsTo": "4-1"
+      "returnsTo": "4-7"
     },
     {
       "id": "4-7",
-      "title": "把小工具放上網：家長點連結就能開",
+      "title": "把小工具放上網：同事點連結就能開",
       "command": "start-4-7",
       "skillPath": ".claude/skills/start-4-7/SKILL.md",
       "estimatedMinutes": 24,
@@ -343,7 +341,7 @@
         "班級點名器.html"
       ],
       "prerequisite": "4-6",
-      "returnsTo": "4-1"
+      "returnsTo": "4-3"
     }
   ]
 }

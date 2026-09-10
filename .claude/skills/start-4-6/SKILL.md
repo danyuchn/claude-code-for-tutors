@@ -36,7 +36,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 - 兩個都在 → 直接從 Step 1 開始，不要向學生提起這個檢查。
 - **`git` 不在** → 這堂課做不下去。誠實告訴學生：「這堂選修課需要你電腦上有一個叫 git 的工具，你這台目前沒有。這不是你的問題，也不影響你已經學會的東西——主線課程完全用不到它。要裝的話（macOS 在終端機執行 `xcode-select --install`，Windows 到 git-scm.com 下載安裝），裝好再回來找我上這堂；不想裝也完全沒關係，我們直接回主線。」然後停在這裡，不要硬做。
-- **`git` 在但 `gh` 不在** → 不要卡住。告訴學生你會改用另一種方式帶她登入，之後 Step 4 的 `gh auth login` 改為引導她到 `https://github.com/new` 用網頁介面建立倉庫，並用 `git remote add origin <網址>` 接上；其餘步驟不變。
+- **`gh` 不在** → 跟 `git` 不在一樣處理，誠實停下。**不要改用網頁建倉庫再 `git push`**：那條路在推送時會要求在終端機輸入帳密，而這裡的指令是非互動執行的，會直接卡住，零程式背景的學員救不回來。改說：「這堂課還需要一個叫 GitHub CLI 的小工具，你這台目前沒有。裝法：macOS 在終端機執行 `brew install gh`，Windows 執行 `winget install GitHub.cli`。裝好再回來找我，不想裝我們就直接回主線，完全沒關係。」
 
 不論走哪一條，都不要顯示原始錯誤訊息，也不要讓學生覺得是自己弄壞了什麼。
 
@@ -96,7 +96,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 「帳號辦好了，接下來換我做事。我要幫你的電腦跟你的 GitHub 帳號『連線』，這樣之後每次存檔，都會自動存到你名下，你不用每次都輸入密碼。」
 
-**Action:** Bash 執行 `gh auth login --web --git-protocol https`，取得一次性裝置代碼與授權網址。
+**Action:** Bash 執行 `gh auth login --web --git-protocol https`，取得一次性裝置代碼與授權網址。**這個指令會一直等到學員在瀏覽器完成授權才返回，老師註冊完再點授權往往超過兩分鐘**，所以要放到背景執行或把逾時拉長，不要讓指令被砍掉害學員以為自己做錯了。
 
 **Present it like this:**
 
@@ -121,7 +121,11 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 「接上了。現在我要幫你把這學期在 `horizon-academy/` 資料夾累積的東西，變成一個可以存檔的專案——這個專案在 GitHub 上會有一個對應的『倉庫』。先講清楚：這個倉庫我設成**只有你自己登入才看得到**（私人倉庫），因為裡面有學生資料，不能公開。」
 
-**Action:** 於工作區根目錄執行 `git init`（若尚未初始化）；用 `gh api user` 取得學生的 GitHub 帳號名稱，設定 `git config user.name` 與 `git config user.email`（用 `<帳號>@users.noreply.github.com` 這種不外洩私人信箱的格式）；確認 `.gitignore` 已排除 `.env`（沒有就建立，內容至少含 `.env` 這一行）；`git add -A`；`git commit -m "第一次存檔：這學期累積的教材與工具"`；用 `gh repo create horizon-academy --private --source=. --remote=origin` 建立私人倉庫（若倉庫已存在，跳過建立、只確認 remote 已接好）。
+**Action:** **倉庫要開在 `horizon-academy/` 這個資料夾裡，不是工作區根目錄**——根目錄是課程本身，它的 `.gitignore` 正好排除了 `/horizon-academy/` 與 `/notes.md`，在根目錄做會把學員這學期的產出全部略過；而且學員若是用 `git clone` 取得課程，根目錄已有指向課程作者的 `origin`。
+
+依序執行：`cd horizon-academy`；`git init -b main`（若已初始化就跳過）；用 `gh api user --jq .login` 取得學生的 GitHub 帳號名稱，在**這個倉庫裡**設定 `git config user.name` 與 `git config user.email`（信箱用 `<帳號>@users.noreply.github.com`，不外洩私人信箱）；在 `horizon-academy/` 裡建立自己的 `.gitignore`（至少含 `*_backup/` 這類體積大又可重建的備份資料夾）；`git add -A`；`git commit -m "第一次存檔：這學期累積的教材與工具"`；用 `gh repo create horizon-academy --private --source=. --remote=origin` 建立私人倉庫（若倉庫已存在，跳過建立、只確認 remote 已接好）。
+
+注意：學員的 `.env`（5-4 若已上過）留在工作區根目錄，天然就在這個倉庫之外，不會被推上去。
 
 **Present it like this:**
 
@@ -166,7 +170,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 我先幫你在一份筆記檔裡『不小心』改壞一段內容，模擬你真的改壞的情況；然後我們一起把它救回來。」
 
-**Action:** 選一份非隱私的檔案（工作區根目錄的 `notes.md`，若不存在就先建立一份含一小段內容的 `notes.md` 並存一次快照）；接著故意修改破壞其中一段文字，並依 Step 6 的心法存一次「改壞的那一版」；用 `git log --oneline` 列出存檔點清單；再用 `git checkout <改壞前那個存檔點的 commit>~0 -- notes.md`（或用 `git revert` 依實際情況擇一）把內容救回改壞之前那一版，並再存一次「復原」的快照。
+**Action:** 選一份非隱私的檔案，**且必須在 `horizon-academy/` 倉庫裡**（用 `horizon-academy/notes.md`，若不存在就先建立一份含一小段內容的檔案並存一次快照；不要用工作區根目錄的 `notes.md`，那個檔在倉庫之外）；接著故意修改破壞其中一段文字，並依 Step 6 的心法存一次「改壞的那一版」；用 `git log --oneline` 列出存檔點清單；再用 `git checkout <改壞前那個存檔點的 commit> -- notes.md`（或用 `git revert` 依實際情況擇一）把內容救回改壞之前那一版，並再存一次「復原」的快照。
 
 **Present it like this:**
 
