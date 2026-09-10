@@ -3,8 +3,13 @@
 **繁體中文** · [English](#claude-code-for-tutors--ai-assistant-workshop-for-educators)
 
 
-> 免費開源課程，專為零程式背景的教師設計。
-> 主線 24 堂 ＋ 選修 3 堂 / 約 8.8 小時 / 節省每週 15 小時行政時間
+> **這不是一套要你看完的課程。是 Claude Code 直接當你的老師。**
+>
+> 沒有影片要看，沒有投影片要翻。打開 Claude 或 ChatGPT 桌面版，說一句「開始」，它就在你自己的資料夾裡，一堂一堂帶你把老師真正在做的事做過一遍——彙整成績、寫家長信、整理一整學期亂掉的教材檔。
+>
+> 你是在做完自己的事的過程中學會工具，不是學完工具再回頭想怎麼用。
+>
+> 免費開源，專為零程式背景的教師設計。主線 24 堂 ＋ 選修 3 堂 / 約 8.8 小時。
 
 本課程的互動式教學框架改編自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)，經原作者同意。哪些沿用自原版、哪些是本課程原創，逐項列在[授權](#授權)。
 
@@ -182,8 +187,13 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 [繁體中文](#claude-code-for-tutors--教師的-ai-助理實戰課程) · **English**
 
 
-> Free and open-source course designed for teachers with zero programming background.
-> 24 core lessons + 3 optional / about 8.8 hours / Save 15 hours of admin work per week
+> **This isn't a course you sit through. Claude Code itself is the teacher.**
+>
+> Nothing to watch, nothing to skim. Open the Claude or ChatGPT desktop app, say "start", and it walks you through the work a teacher actually does — pulling grades together, writing letters home, sorting out a term's worth of messy lesson files — right inside your own folder.
+>
+> You learn the tool while getting your own work done, not before it.
+>
+> Free and open-source, built for teachers with zero programming background. 24 core lessons + 3 optional / about 8.8 hours.
 
 The interactive teaching framework is adapted, with the original author's permission, from [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course). What is carried over and what is original to this course is listed item by item under [License](#license).
 
