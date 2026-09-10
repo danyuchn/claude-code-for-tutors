@@ -1,5 +1,8 @@
 # Claude Code for Tutors — 教師的 AI 助理實戰課程
 
+**繁體中文** · [English](#claude-code-for-tutors--ai-assistant-workshop-for-educators)
+
+
 > 免費開源課程，專為零程式背景的教師設計。
 > 主線 24 堂 ＋ 選修 3 堂 / 約 8.8 小時 / 節省每週 15 小時行政時間
 
@@ -171,6 +174,9 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 ---
 
 # Claude Code for Tutors — AI Assistant Workshop for Educators
+
+[繁體中文](#claude-code-for-tutors--教師的-ai-助理實戰課程) · **English**
+
 
 > Free and open-source course designed for teachers with zero programming background.
 > 24 core lessons + 3 optional / about 8.8 hours / Save 15 hours of admin work per week
