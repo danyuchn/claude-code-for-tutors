@@ -1,6 +1,6 @@
 ---
 name: start-4-3
-description: "課程 4-3：把你的經驗整理成 FAQ 知識庫指令。學員說「開始 4-3」「上 4-3」「開始第十九課」或輸入 /start-4-3 時載入。"
+description: "課程 4-3：把你的經驗整理成 FAQ 知識庫指令。學員說「開始 4-3」「上 4-3」「開始第二十二課」或輸入 /start-4-3 時載入。"
 allowed-tools: [Read, Write, Bash]
 ---
 

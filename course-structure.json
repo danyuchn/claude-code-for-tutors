@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-09-02",
+  "lastUpdated": "2026-09-10",
   "modules": [
     {
       "id": "1",
@@ -12,7 +12,7 @@
           "command": "start-1-1",
           "skillPath": ".claude/skills/start-1-1/SKILL.md",
           "appendixPath": "modules/module-1-communication/lesson-1-1.md",
-          "estimatedMinutes": 12,
+          "estimatedMinutes": 17,
           "output": "從月考成績與家長問卷交叉比對出的本週學生關注行動清單（本週優先聯繫／下週觀察兩層）",
           "assets": [
             "exam-scores.csv",
@@ -35,7 +35,7 @@
           "command": "start-1-3",
           "skillPath": ".claude/skills/start-1-3/SKILL.md",
           "appendixPath": "modules/module-1-communication/lesson-1-3.md",
-          "estimatedMinutes": 12,
+          "estimatedMinutes": 13,
           "output": "依語氣與學生狀況交叉出的四套家長通知信模板（2x2 矩陣）",
           "assets": []
         },
@@ -45,7 +45,7 @@
           "command": "start-1-4",
           "skillPath": ".claude/skills/start-1-4/SKILL.md",
           "appendixPath": "modules/module-1-communication/lesson-1-4.md",
-          "estimatedMinutes": 10,
+          "estimatedMinutes": 14,
           "output": "分批產出並抽查驗收的 25 封個人化家長信",
           "assets": []
         },
@@ -55,7 +55,7 @@
           "command": "start-1-5",
           "skillPath": ".claude/skills/start-1-5/SKILL.md",
           "appendixPath": "modules/module-1-communication/lesson-1-5.md",
-          "estimatedMinutes": 10,
+          "estimatedMinutes": 20,
           "output": "了解班級人際氣氛的替代方案清單，及依選定方案產出的具體工具（如匿名問卷）",
           "assets": []
         }
@@ -71,7 +71,7 @@
           "command": "start-2-1",
           "skillPath": ".claude/skills/start-2-1/SKILL.md",
           "appendixPath": "modules/module-2-daily-tasks/lesson-2-1.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 20,
           "output": "依學生成績趨勢與家長備註個人化產出的 25 封月底家長信",
           "assets": [
             "exam-scores-oct.csv",
@@ -84,7 +84,7 @@
           "command": "start-2-2",
           "skillPath": ".claude/skills/start-2-2/SKILL.md",
           "appendixPath": "modules/module-2-daily-tasks/lesson-2-2.md",
-          "estimatedMinutes": 12,
+          "estimatedMinutes": 21,
           "output": "去除 AI 感、改寫得更口語真實的班級經營貼文",
           "assets": []
         },
@@ -94,7 +94,7 @@
           "command": "start-2-3",
           "skillPath": ".claude/skills/start-2-3/SKILL.md",
           "appendixPath": "modules/module-2-daily-tasks/lesson-2-3.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 12,
           "output": "從模糊記憶（性別、出席率、名字片段）逐步鎖定出的學生完整資料摘要",
           "assets": [
             "attendance.csv",
@@ -117,7 +117,7 @@
           "command": "start-2-5",
           "skillPath": ".claude/skills/start-2-5/SKILL.md",
           "appendixPath": "modules/module-2-daily-tasks/lesson-2-5.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 32,
           "output": "教材資料夾命名規範，及疑似重複／過時檔案清單（待老師確認）",
           "assets": [
             "teaching-materials/"
@@ -129,7 +129,7 @@
           "command": "start-2-6",
           "skillPath": ".claude/skills/start-2-6/SKILL.md",
           "appendixPath": "modules/module-2-daily-tasks/lesson-2-6.md",
-          "estimatedMinutes": 12,
+          "estimatedMinutes": 18,
           "output": "跨信箱／雲端硬碟／人脈的系統化搜尋策略，及教材索引表模板",
           "assets": []
         }
@@ -145,7 +145,7 @@
           "command": "start-3-1",
           "skillPath": ".claude/skills/start-3-1/SKILL.md",
           "appendixPath": "modules/module-3-data-analysis/lesson-3-1.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 14,
           "output": "整合成績、出席、作業繳交、考試行為後判讀出的張志豪問題診斷（pacing 而非學力問題）",
           "assets": [
             "zhang-zhihao-homework.csv",
@@ -159,7 +159,7 @@
           "command": "start-3-2",
           "skillPath": ".claude/skills/start-3-2/SKILL.md",
           "appendixPath": "modules/module-3-data-analysis/lesson-3-2.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 13,
           "output": "家長問卷量化分數與質化意見的矛盾分析（找出分數掩蓋的溝通透明度問題）",
           "assets": [
             "parent-survey-comments.md",
@@ -172,7 +172,7 @@
           "command": "start-3-3",
           "skillPath": ".claude/skills/start-3-3/SKILL.md",
           "appendixPath": "modules/module-3-data-analysis/lesson-3-3.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 18,
           "output": "把張志豪追蹤資料改包裝成輔導老師版摘要（三指標趨勢＋教師觀察＋建議）",
           "assets": [
             "zhang-zhihao-3-1-conclusion.md",
@@ -188,7 +188,7 @@
           "command": "start-3-4",
           "skillPath": ".claude/skills/start-3-4/SKILL.md",
           "appendixPath": "modules/module-3-data-analysis/lesson-3-4.md",
-          "estimatedMinutes": 15,
+          "estimatedMinutes": 17,
           "output": "整合三份格式不同招生資料後的管道轉化率分析報告",
           "assets": [
             "enrolled-students.csv",
@@ -202,9 +202,46 @@
           "command": "start-3-5",
           "skillPath": ".claude/skills/start-3-5/SKILL.md",
           "appendixPath": "modules/module-3-data-analysis/lesson-3-5.md",
-          "estimatedMinutes": 12,
+          "estimatedMinutes": 14,
           "output": "從『感覺不對』診斷出的成績公式問題報告（含公式邏輯與異常值兩項成因）",
           "assets": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "做出看得見的東西",
+      "lessons": [
+        {
+          "id": "5-1",
+          "title": "幫學習單配一張剛剛好的圖",
+          "command": "start-5-1",
+          "skillPath": ".claude/skills/start-5-1/SKILL.md",
+          "estimatedMinutes": 18,
+          "output": "一段完全由你自己的回答組成、可貼進任何生圖工具的配圖描述",
+          "assets": [
+            "unit6-worksheet-draft.md"
+          ]
+        },
+        {
+          "id": "5-2",
+          "title": "讓班上的視覺看起來像同一個人做的",
+          "command": "start-5-2",
+          "skillPath": ".claude/skills/start-5-2/SKILL.md",
+          "estimatedMinutes": 20,
+          "output": "可重複使用的班級視覺風格規格，及三段共用同一風格的用途描述",
+          "assets": []
+        },
+        {
+          "id": "5-3",
+          "title": "做一個你自己的班級小工具",
+          "command": "start-5-3",
+          "skillPath": ".claude/skills/start-5-3/SKILL.md",
+          "estimatedMinutes": 22,
+          "output": "一個雙擊即可用、名單來自真實 CSV 的隨機點名器 HTML",
+          "assets": [
+            "student-roster.csv"
+          ]
         }
       ]
     },
@@ -218,7 +255,7 @@
           "command": "start-4-1",
           "skillPath": ".claude/skills/start-4-1/SKILL.md",
           "appendixPath": "modules/module-4-automation/lesson-4-1.md",
-          "estimatedMinutes": 20,
+          "estimatedMinutes": 13,
           "output": "把月報流程封裝成的 `/monthly-report` 自訂指令草稿",
           "assets": []
         },
@@ -228,7 +265,7 @@
           "command": "start-4-2",
           "skillPath": ".claude/skills/start-4-2/SKILL.md",
           "appendixPath": "modules/module-4-automation/lesson-4-2.md",
-          "estimatedMinutes": 18,
+          "estimatedMinutes": 40,
           "output": "200 份教材的命名規則設計，及疑似重複／待確認檔案清單",
           "assets": [
             "teaching-materials-200/"
@@ -250,8 +287,17 @@
           "command": "start-4-4",
           "skillPath": ".claude/skills/start-4-4/SKILL.md",
           "appendixPath": "modules/module-4-automation/lesson-4-4.md",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 32,
           "output": "個人化 CLAUDE.md 初版，及三個自訂指令草稿（monthly-report、student-check、parent-faq）",
+          "assets": []
+        },
+        {
+          "id": "4-5",
+          "title": "帶著它去動真實的資料",
+          "command": "start-4-5",
+          "skillPath": ".claude/skills/start-4-5/SKILL.md",
+          "estimatedMinutes": 21,
+          "output": "三句在動真實班級資料前必須知道的話，以及完整帶走的個人 AI 協作系統",
           "assets": []
         }
       ]

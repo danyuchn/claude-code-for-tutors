@@ -1,7 +1,7 @@
 # Claude Code for Tutors — 教師的 AI 助理實戰課程
 
 > 免費開源課程，專為零程式背景的教師設計。
-> 20 堂課 / 約 5 小時 / 節省每週 15 小時行政時間
+> 24 堂課 / 約 7.6 小時 / 節省每週 15 小時行政時間
 
 ## 為什麼老師需要 AI 助理？
 
@@ -56,7 +56,7 @@ claude
 
 ## 課程目錄
 
-### Module 1：與 AI 說話的藝術（5 課，約 60 分鐘）
+### Module 1：與 AI 說話的藝術（5 課，約 76 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -66,7 +66,7 @@ claude
 | 1-4 | AI 中途停頓——主動介入與即時調整 | [開始學習](.claude/skills/start-1-4/SKILL.md) |
 | 1-5 | AI 碰不到你的資料——找到能力邊界，換路前行 | [開始學習](.claude/skills/start-1-5/SKILL.md) |
 
-### Module 2：老師的日常任務（6 課，約 80-100 分鐘）
+### Module 2：老師的日常任務（6 課，約 118 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -77,7 +77,7 @@ claude
 | 2-5 | 讓 AI 整理命名混亂的教材資料夾 | [開始學習](.claude/skills/start-2-5/SKILL.md) |
 | 2-6 | 把模糊記憶變成系統化搜尋策略 | [開始學習](.claude/skills/start-2-6/SKILL.md) |
 
-### Module 3：數據讓教學更聰明（5 課，約 70-90 分鐘）
+### Module 3：數據讓教學更聰明（5 課，約 76 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -87,7 +87,15 @@ claude
 | 3-4 | 處理三份格式不同的雜亂資料 | [開始學習](.claude/skills/start-3-4/SKILL.md) |
 | 3-5 | 從模糊的「感覺不對」診斷公式問題 | [開始學習](.claude/skills/start-3-5/SKILL.md) |
 
-### Module 4：自動化你的教學工作流（4 課，約 70-90 分鐘）
+### Module 5：做出看得見的東西（3 課，約 60 分鐘）
+
+| 課號 | 課程名稱 | 連結 |
+|------|----------|------|
+| 5-1 | 幫學習單配一張剛剛好的圖 | [開始學習](.claude/skills/start-5-1/SKILL.md) |
+| 5-2 | 讓班上的視覺看起來像同一個人做的 | [開始學習](.claude/skills/start-5-2/SKILL.md) |
+| 5-3 | 做一個你自己的班級小工具 | [開始學習](.claude/skills/start-5-3/SKILL.md) |
+
+### Module 4：自動化你的教學工作流（5 課，約 126 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -95,6 +103,7 @@ claude
 | 4-2 | 用 AI 整理 200 份命名混亂的教材 | [開始學習](.claude/skills/start-4-2/SKILL.md) |
 | 4-3 | 把你的經驗整理成 FAQ 知識庫指令 | [開始學習](.claude/skills/start-4-3/SKILL.md) |
 | 4-4 | 建立你的個人 AI 協作系統 | [開始學習](.claude/skills/start-4-4/SKILL.md) |
+| 4-5 | 帶著它去動真實的資料 | [開始學習](.claude/skills/start-4-5/SKILL.md) |
 
 ## 怎麼開課
 
@@ -110,6 +119,8 @@ claude
 - [Module 2：老師的日常任務](modules/module-2-daily-tasks/)
 - [Module 3：數據讓教學更聰明](modules/module-3-data-analysis/)
 - [Module 4：自動化你的教學工作流](modules/module-4-automation/)
+
+Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝腳本。
 
 ## 授權
 
@@ -127,11 +138,11 @@ claude
 
 **本課程的原創部分**：
 
-- 20 堂課的全部文字內容、教學情境與對白（與原版無任何文本重複）
+- 24 堂課的全部文字內容、教學情境與對白（與原版無任何文本重複）
 - 虛擬場景明日學院（Horizon Academy）、教學助理「小艾」的人格設定、林欣怡老師與 25 位學生的完整設定
 - 全部教材資產：成績單、出席紀錄、家長問卷、招生資料等 CSV，以及刻意設計成命名混亂的 200 餘份教材檔
 - 中文教學法規則（先比喻後術語、不一次給太多、學員犯錯溫和指出、為零程式基礎者建立信心）
-- **課程本身教的協作方法論**：原版 Foundation 是 Claude Code 的功能導覽（Agents、Sub-agents、Project Memory、鍵盤快捷鍵）；本課程改為教「AI 會怎麼失敗、你怎麼救回來」——講不出問題時怎麼診斷、需求太複雜怎麼拆、AI 中途停頓怎麼介入、碰到能力邊界怎麼換路、從模糊記憶怎麼收斂。20 堂中只有 4-4（CLAUDE.md 與自訂指令）與原版主題有實質對應
+- **課程本身教的協作方法論**：原版 Foundation 是 Claude Code 的功能導覽（Agents、Sub-agents、Project Memory、鍵盤快捷鍵）；本課程改為教「AI 會怎麼失敗、你怎麼救回來」——講不出問題時怎麼診斷、需求太複雜怎麼拆、AI 中途停頓怎麼介入、碰到能力邊界怎麼換路、從模糊記憶怎麼收斂。功能主題上與原版 1.2–1.7、3.x、4.1–4.3 有對應（檔案樹、平行代理、output style、CLAUDE.md 與子代理、plan 模式與 model effort、圖像與小工具）；**原版的 GitHub 版本控制與 Vercel 部署（4.4–4.5）本課刻意不教**，因為讀者是零程式背景的教師；**原版用 API 金鑰真的生成圖片，本課改為教怎麼把畫面描述清楚，生成那一步交給老師手邊已有的工具**，以維持「不裝東西、不辦金鑰」的承諾
 - `recap` 與 `hint` 兩支獨立 skill（原版只把它列為「學員可以隨口要求的事」，未實作）
 - 移除原版與其商業平台的所有綁定（CLI 工具、帳號登入、進度同步、證書發放），改為完全離線可自學
 
@@ -152,7 +163,7 @@ claude
 # Claude Code for Tutors — AI Assistant Workshop for Educators
 
 > Free and open-source course designed for teachers with zero programming background.
-> 20 lessons / about 5 hours / Save 15 hours of admin work per week
+> 24 lessons / about 7.6 hours / Save 15 hours of admin work per week
 
 ## About
 
@@ -200,10 +211,11 @@ After each lesson, run `/clear` before starting the next one.
 
 | Module | Title | Lessons | Duration |
 |--------|-------|---------|----------|
-| 1 | The Art of Talking to AI | 5 | ~60 min |
-| 2 | Daily Teacher Tasks | 6 | ~80-100 min |
-| 3 | Data-Driven Teaching | 5 | ~70-90 min |
-| 4 | Automate Your Teaching Workflow | 4 | ~70-90 min |
+| 1 | The Art of Talking to AI | 5 | ~76 min |
+| 2 | Daily Teacher Tasks | 6 | ~118 min |
+| 3 | Data-Driven Teaching | 5 | ~76 min |
+| 5 | Making Things You Can See | 3 | ~60 min |
+| 4 | Automate Your Teaching Workflow | 5 | ~126 min |
 
 ## Appendix: Video Shooting Scripts
 
@@ -230,11 +242,11 @@ The interactive teaching framework is adapted from [Carl Vellotti](https://x.com
 
 **Original to this course**:
 
-- All written content, teaching scenarios, and dialogue across the 20 lessons (no textual overlap with the original)
+- All written content, teaching scenarios, and dialogue across the 24 lessons (no textual overlap with the original)
 - The fictional setting (Horizon Academy), the "Xiao-Ai" teaching-assistant persona, and the full cast of Ms. Lin and 25 students
 - Every course asset: exam scores, attendance records, parent surveys, enrolment data, plus 200+ deliberately messy teaching files
 - The Chinese-language pedagogy rules (metaphor before jargon, small steps, correct gently, build confidence for non-programmers)
-- **The collaboration methodology the course actually teaches**: the original's Foundation is a feature tour of Claude Code (Agents, Sub-agents, Project Memory, keyboard navigation). This course teaches how the AI fails and how you recover — diagnosing a problem you cannot articulate, decomposing tangled requirements, intervening when the agent stalls, recognising a capability boundary and routing around it, converging from a vague memory. Only lesson 4-4 (CLAUDE.md and custom commands) maps onto the original's topics
+- **The collaboration methodology the course actually teaches**: the original's Foundation is a feature tour of Claude Code (Agents, Sub-agents, Project Memory, keyboard navigation). This course teaches how the AI fails and how you recover — diagnosing a problem you cannot articulate, decomposing tangled requirements, intervening when the agent stalls, recognising a capability boundary and routing around it, converging from a vague memory. Topic-wise it now maps onto the original's 1.2–1.7, 3.x and 4.1–4.3; the original's GitHub and Vercel deployment lessons (4.4–4.5) are deliberately **not** taught here, and its API-key image generation is replaced by teaching how to describe an image precisely, with generation left to whatever tool the teacher already has — both to keep the no-install, no-API-key promise
 - The standalone `recap` and `hint` skills (the original lists these only as things a learner may ask for; they are not implemented)
 - Removal of every dependency on the original's commercial platform (its CLI, account login, progress sync, and certificates), making this course fully self-contained and offline-capable
 

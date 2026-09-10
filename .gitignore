@@ -14,10 +14,8 @@ __pycache__/
 # Node
 node_modules/
 
-# Codex AI files
-.codex/
+# Codex AI files（.codex/ 與 AGENTS.md 是課程的 Codex 版本，屬產品內容，需追蹤）
 .agents/
-AGENTS.md
 
 # 學員工作區產物（開課時由 Setup 複製、上課時記筆記）
 /horizon-academy/
