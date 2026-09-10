@@ -1,7 +1,7 @@
 ---
 name: start-2-2
 description: "課程 2-2：去 AI 化，讓文字有人味。學員說「開始 2-2」「上 2-2」「開始第七課」或輸入 /start-2-2 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

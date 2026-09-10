@@ -1,7 +1,7 @@
 ---
 name: start-2-1
 description: "課程 2-1：批次產出個人化家長信。學員說「開始 2-1」「上 2-1」「開始第六課」或輸入 /start-2-1 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep, Task]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, Task]
 ---
 
 ## Setup

@@ -1,7 +1,7 @@
 ---
 name: start-4-5
 description: "課程 4-5：帶著它去動真實的資料。學員說「開始 4-5」「上 4-5」「開始第二十四課」或輸入 /start-4-5 時載入。"
-allowed-tools: [Read, Write, Bash]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

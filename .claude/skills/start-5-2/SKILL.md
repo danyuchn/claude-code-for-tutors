@@ -1,7 +1,7 @@
 ---
 name: start-5-2
 description: "課程 5-2：讓班上的視覺看起來像同一個人做的。學員說「開始 5-2」「上 5-2」「開始第十八課」或輸入 /start-5-2 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

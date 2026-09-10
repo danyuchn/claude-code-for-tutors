@@ -1,7 +1,7 @@
 ---
 name: start-4-1
 description: "課程 4-1：把月報流程變成一個可重複用的指令。學員說「開始 4-1」「上 4-1」「開始第二十課」或輸入 /start-4-1 時載入。"
-allowed-tools: [Read, Write, Bash]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

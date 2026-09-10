@@ -1,7 +1,7 @@
 ---
 name: start-3-2
 description: "課程 3-2：讓 AI 找出量化和質化之間的矛盾。學員說「開始 3-2」「上 3-2」「開始第十三課」或輸入 /start-3-2 時載入。"
-allowed-tools: [Read, Write, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

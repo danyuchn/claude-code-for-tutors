@@ -1,7 +1,7 @@
 ---
 name: start-5-1
 description: "課程 5-1：幫學習單配一張剛剛好的圖。學員說「開始 5-1」「上 5-1」「開始第十七課」或輸入 /start-5-1 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

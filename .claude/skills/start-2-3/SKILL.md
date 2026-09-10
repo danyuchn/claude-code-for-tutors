@@ -1,7 +1,7 @@
 ---
 name: start-2-3
 description: "課程 2-3：記錯名字也能找到對的人。學員說「開始 2-3」「上 2-3」「開始第八課」或輸入 /start-2-3 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

@@ -1,7 +1,7 @@
 ---
 name: start-2-4
 description: "課程 2-4：讓 AI 診斷問題，再設計針對性練習題。學員說「開始 2-4」「上 2-4」「開始第九課」或輸入 /start-2-4 時載入。"
-allowed-tools: [Read, Write]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

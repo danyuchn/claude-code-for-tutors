@@ -1,7 +1,7 @@
 ---
 name: start-4-4
 description: "課程 4-4：建立你的個人 AI 協作系統。學員說「開始 4-4」「上 4-4」「開始第二十三課」或輸入 /start-4-4 時載入。"
-allowed-tools: [Read, Write, Bash, Task]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, Task]
 ---
 
 ## Setup

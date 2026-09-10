@@ -1,7 +1,7 @@
 ---
 name: start-1-2
 description: "課程 1-2：感覺不對但說不清楚——讓 AI 幫你診斷。學員說「開始 1-2」「上 1-2」「開始第二課」或輸入 /start-1-2 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

@@ -1,7 +1,7 @@
 ---
 name: start-2-6
 description: "課程 2-6：把模糊記憶變成系統化搜尋策略。學員說「開始 2-6」「上 2-6」「開始第十一課」或輸入 /start-2-6 時載入。"
-allowed-tools: [Read, Write]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

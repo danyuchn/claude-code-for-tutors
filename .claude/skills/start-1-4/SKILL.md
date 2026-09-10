@@ -1,7 +1,7 @@
 ---
 name: start-1-4
 description: "課程 1-4：AI 中途停頓——主動介入與即時調整。學員說「開始 1-4」「上 1-4」「開始第四課」或輸入 /start-1-4 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

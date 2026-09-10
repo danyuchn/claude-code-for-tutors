@@ -1,7 +1,7 @@
 ---
 name: start-3-4
 description: "課程 3-4：處理三份格式不同的雜亂資料。學員說「開始 3-4」「上 3-4」「開始第十五課」或輸入 /start-3-4 時載入。"
-allowed-tools: [Read, Write, Bash]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

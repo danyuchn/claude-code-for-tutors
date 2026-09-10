@@ -1,7 +1,7 @@
 ---
 name: start-5-3
 description: "課程 5-3：做一個你自己的班級小工具。學員說「開始 5-3」「上 5-3」「開始第十九課」或輸入 /start-5-3 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

@@ -1,7 +1,7 @@
 ---
 name: start-2-5
 description: "課程 2-5：讓 AI 整理命名混亂的教材資料夾。學員說「開始 2-5」「上 2-5」「開始第十課」或輸入 /start-2-5 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Grep]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

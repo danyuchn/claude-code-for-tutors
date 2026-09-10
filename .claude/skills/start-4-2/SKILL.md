@@ -1,7 +1,7 @@
 ---
 name: start-4-2
 description: "課程 4-2：用 AI 整理 200 份命名混亂的教材。學員說「開始 4-2」「上 4-2」「開始第二十一課」或輸入 /start-4-2 時載入。"
-allowed-tools: [Read, Write, Bash, Glob, Task]
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, Task]
 ---
 
 ## Setup
