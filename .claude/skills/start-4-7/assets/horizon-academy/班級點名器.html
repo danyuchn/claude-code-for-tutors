@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>班級點名器</title>
+<style>
+  body {
+    font-family: "PingFang TC", "Microsoft JhengHei", "Heiti TC", sans-serif;
+    background: #fdf6ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  #name-display {
+    font-size: 72px;
+    font-weight: bold;
+    color: #c8371e;
+    min-height: 100px;
+    margin: 30px 0;
+  }
+  button {
+    font-size: 24px;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 12px;
+    background: #c8371e;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  #status {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #666;
+  }
+  #reset-btn {
+    margin-top: 20px;
+    background: #999;
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+</style>
+</head>
+<body>
+  <h1>班級點名器</h1>
+  <div id="name-display">按下方按鈕開始抽籤</div>
+  <button id="draw-btn">抽一位</button>
+  <div id="status"></div>
+  <button id="reset-btn">重新開始這一輪</button>
+
+<script>
+  const students = [
+    "林子晴", "黃志明", "陳怡君", "王建明", "劉芳瑜",
+    "吳佩珊", "李嘉豪", "吳建宏", "蔡依玲", "許志偉",
+    "楊雅婷", "鄭明哲", "林佳蓉", "張雅雯", "黃俊傑",
+    "謝佳玲", "陳建安", "邱怡萱", "張志豪", "劉家銘",
+    "蘇怡安", "周明哲", "吳雅晴", "林世昌", "陳俊宏"
+  ];
+
+  let remaining = [...students];
+
+  const nameDisplay = document.getElementById("name-display");
+  const drawBtn = document.getElementById("draw-btn");
+  const statusEl = document.getElementById("status");
+  const resetBtn = document.getElementById("reset-btn");
+
+  function updateStatus() {
+    statusEl.textContent = `這一輪還剩 ${remaining.length} 位還沒被抽到`;
+  }
+
+  drawBtn.addEventListener("click", () => {
+    if (remaining.length === 0) {
+      nameDisplay.textContent = "這一輪抽完了！";
+      drawBtn.disabled = true;
+      return;
+    }
+    const index = Math.floor(Math.random() * remaining.length);
+    const picked = remaining.splice(index, 1)[0];
+    nameDisplay.textContent = picked;
+    updateStatus();
+    if (remaining.length === 0) {
+      drawBtn.disabled = true;
+      statusEl.textContent = "這一輪抽完了，可以按「重新開始這一輪」";
+    }
+  });
+
+  resetBtn.addEventListener("click", () => {
+    remaining = [...students];
+    nameDisplay.textContent = "按下方按鈕開始抽籤";
+    drawBtn.disabled = false;
+    updateStatus();
+  });
+
+  updateStatus();
+</script>
+</body>
+</html>

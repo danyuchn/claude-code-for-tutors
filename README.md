@@ -105,6 +105,16 @@ claude
 | 4-4 | 建立你的個人 AI 協作系統 | [開始學習](.claude/skills/start-4-4/SKILL.md) |
 | 4-5 | 帶著它去動真實的資料 | [開始學習](.claude/skills/start-4-5/SKILL.md) |
 
+### 選修課（3 課，約 75 分鐘）
+
+補齊原版有、主線刻意不教的三項能力。**都不在主線順序裡，上不上都不影響主線的完整性**——因為它們各自有主線承諾之外的門檻，所以獨立出來讓你自己決定。每堂結束都會指回主線 4-1。
+
+| 課號 | 課程名稱 | 前置 | 你要先知道的門檻 | 連結 |
+|------|----------|------|----------------|------|
+| 5-4 | 真的把圖生出來 | 5-1 | Google 的生圖模型**沒有免費額度**，要先開通付費才能用 | [開始學習](.claude/skills/start-5-4/SKILL.md) |
+| 4-6 | 改壞了能回頭：把你的東西存進 GitHub | 4-2 | 需要註冊 GitHub 帳號（免費），電腦上要有 `git` | [開始學習](.claude/skills/start-4-6/SKILL.md) |
+| 4-7 | 把小工具放上網：家長點連結就能開 | 4-6 | 免費方案的公開發布**全世界都看得到**，所以課程會先帶你把學生姓名換成代號 | [開始學習](.claude/skills/start-4-7/SKILL.md) |
+
 ## 怎麼開課
 
 | 桌面版 | 終端機 |
@@ -142,7 +152,7 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 - 虛擬場景明日學院（Horizon Academy）、教學助理「小艾」的人格設定、林欣怡老師與 25 位學生的完整設定
 - 全部教材資產：成績單、出席紀錄、家長問卷、招生資料等 CSV，以及刻意設計成命名混亂的 200 餘份教材檔
 - 中文教學法規則（先比喻後術語、不一次給太多、學員犯錯溫和指出、為零程式基礎者建立信心）
-- **課程本身教的協作方法論**：原版 Foundation 是 Claude Code 的功能導覽（Agents、Sub-agents、Project Memory、鍵盤快捷鍵）；本課程改為教「AI 會怎麼失敗、你怎麼救回來」——講不出問題時怎麼診斷、需求太複雜怎麼拆、AI 中途停頓怎麼介入、碰到能力邊界怎麼換路、從模糊記憶怎麼收斂。功能主題上與原版 1.2–1.7、3.x、4.1–4.3 有對應（檔案樹、平行代理、output style、CLAUDE.md 與子代理、plan 模式與 model effort、圖像與小工具）；**原版的 GitHub 版本控制與 Vercel 部署（4.4–4.5）本課刻意不教**，因為讀者是零程式背景的教師；**原版用 API 金鑰真的生成圖片，本課改為教怎麼把畫面描述清楚，生成那一步交給老師手邊已有的工具**，以維持「不裝東西、不辦金鑰」的承諾
+- **課程本身教的協作方法論**：原版 Foundation 是 Claude Code 的功能導覽（Agents、Sub-agents、Project Memory、鍵盤快捷鍵）；本課程改為教「AI 會怎麼失敗、你怎麼救回來」——講不出問題時怎麼診斷、需求太複雜怎麼拆、AI 中途停頓怎麼介入、碰到能力邊界怎麼換路、從模糊記憶怎麼收斂。功能主題上與原版 1.2–1.7、3.x、4.1–4.3 有對應（檔案樹、平行代理、output style、CLAUDE.md 與子代理、plan 模式與 model effort、圖像與小工具）。**原版的三項能力——真的生成圖片、GitHub 版本控制、線上部署——主線 24 堂刻意不教**，因為它們都需要辦帳號、綁信用卡或把內容公開上網，與本課程對零程式背景教師「不裝東西、不辦金鑰」的承諾衝突；**這三項改以三堂選修課補齊**（5-4 生圖、4-6 版本控制、4-7 部署），能力上不比原版少，但要不要上由讀者自己決定。選修課的門檻在各課開頭誠實講明：生圖需付費開通（Google 官方定價頁對生圖模型的免費額度標示為 Not available），部署走 GitHub Pages 且公開 repo 等於全世界看得到，因此課程會先要求把學生姓名換掉再上傳
 - `recap` 與 `hint` 兩支獨立 skill（原版只把它列為「學員可以隨口要求的事」，未實作）
 - 移除原版與其商業平台的所有綁定（CLI 工具、帳號登入、進度同步、證書發放），改為完全離線可自學
 
@@ -216,6 +226,15 @@ After each lesson, run `/clear` before starting the next one.
 | 3 | Data-Driven Teaching | 5 | ~76 min |
 | 5 | Making Things You Can See | 3 | ~60 min |
 | 4 | Automate Your Teaching Workflow | 5 | ~126 min |
+| — | *Optional lessons (outside the main track)* | 3 | ~75 min |
+
+**Optional lessons** cover the three capabilities the original teaches but the main track deliberately leaves out, because each carries a cost the main track promises not to impose. Skipping them costs you nothing in the main track; each one ends by pointing back to 4-1.
+
+| Lesson | Title | Requires | Up-front cost |
+|--------|-------|----------|---------------|
+| 5-4 | Actually generate the image | 5-1 | Google's image models have **no free tier**; paid billing required |
+| 4-6 | Undo a bad change: put your work on GitHub | 4-2 | A free GitHub account, and `git` installed |
+| 4-7 | Put your tool online | 4-6 | Free-plan publishing is **visible to everyone**, so the lesson replaces student names with codes first |
 
 ## Appendix: Video Shooting Scripts
 
@@ -246,7 +265,7 @@ The interactive teaching framework is adapted from [Carl Vellotti](https://x.com
 - The fictional setting (Horizon Academy), the "Xiao-Ai" teaching-assistant persona, and the full cast of Ms. Lin and 25 students
 - Every course asset: exam scores, attendance records, parent surveys, enrolment data, plus 200+ deliberately messy teaching files
 - The Chinese-language pedagogy rules (metaphor before jargon, small steps, correct gently, build confidence for non-programmers)
-- **The collaboration methodology the course actually teaches**: the original's Foundation is a feature tour of Claude Code (Agents, Sub-agents, Project Memory, keyboard navigation). This course teaches how the AI fails and how you recover — diagnosing a problem you cannot articulate, decomposing tangled requirements, intervening when the agent stalls, recognising a capability boundary and routing around it, converging from a vague memory. Topic-wise it now maps onto the original's 1.2–1.7, 3.x and 4.1–4.3; the original's GitHub and Vercel deployment lessons (4.4–4.5) are deliberately **not** taught here, and its API-key image generation is replaced by teaching how to describe an image precisely, with generation left to whatever tool the teacher already has — both to keep the no-install, no-API-key promise
+- **The collaboration methodology the course actually teaches**: the original's Foundation is a feature tour of Claude Code (Agents, Sub-agents, Project Memory, keyboard navigation). This course teaches how the AI fails and how you recover — diagnosing a problem you cannot articulate, decomposing tangled requirements, intervening when the agent stalls, recognising a capability boundary and routing around it, converging from a vague memory. Topic-wise it now maps onto the original's 1.2–1.7, 3.x and 4.1–4.3. Three of the original's capabilities — real image generation, GitHub version control, and online deployment — are deliberately **not** in the 24-lesson main track, because each requires an account, a credit card, or publishing content to the open web, which conflicts with this course's no-install, no-API-key promise to teachers with no programming background. **All three are covered instead by three optional lessons** (5-4 image generation, 4-6 version control, 4-7 deployment), so nothing the original teaches is missing — taking them is the reader's choice. Each optional lesson states its cost up front: image generation requires paid billing (Google's own pricing page lists no free tier for the image models), and deployment uses GitHub Pages, where a public repository is visible to everyone, so the lesson replaces real student names before anything is uploaded
 - The standalone `recap` and `hint` skills (the original lists these only as things a learner may ask for; they are not implemented)
 - Removal of every dependency on the original's commercial platform (its CLI, account login, progress sync, and certificates), making this course fully self-contained and offline-capable
 
