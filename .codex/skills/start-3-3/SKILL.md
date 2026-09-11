@@ -1,6 +1,7 @@
 ---
 name: start-3-3
 description: "課程 3-3：換受眾，重新包裝同一份資料。學員說「開始 3-3」「上 3-3」「開始第十四課」或輸入 /start-3-3 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

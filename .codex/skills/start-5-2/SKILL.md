@@ -1,15 +1,16 @@
 ---
 name: start-5-2
 description: "課程 5-2：讓班上的視覺看起來像同一個人做的。學員說「開始 5-2」「上 5-2」「開始第十八課」或輸入 /start-5-2 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup
 
 Read `.codex/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+!`cp -rn "${CODEX_SKILL_DIR}/assets/." . 2>/dev/null || true`
 
-ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CODEX_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 5-2：讓班上的視覺看起來像同一個人做的
 

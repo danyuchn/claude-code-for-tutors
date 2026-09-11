@@ -1,6 +1,7 @@
 ---
 name: start-3-5
 description: "課程 3-5：從模糊的「感覺不對」診斷公式問題。學員說「開始 3-5」「上 3-5」「開始第十六課」或輸入 /start-3-5 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

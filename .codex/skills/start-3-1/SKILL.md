@@ -1,6 +1,7 @@
 ---
 name: start-3-1
 description: "課程 3-1：從三個月資料找出張志豪真正的問題。學員說「開始 3-1」「上 3-1」「開始第十二課」或輸入 /start-3-1 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

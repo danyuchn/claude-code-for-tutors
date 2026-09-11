@@ -1,6 +1,7 @@
 ---
 name: start-1-3
 description: "課程 1-3：需求太複雜——把條件拆清楚，讓 AI 分別處理。學員說「開始 1-3」「上 1-3」「開始第三課」或輸入 /start-1-3 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup

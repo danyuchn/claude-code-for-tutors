@@ -1,6 +1,7 @@
 ---
 name: start-2-1
 description: "課程 2-1：批次產出個人化家長信。學員說「開始 2-1」「上 2-1」「開始第六課」或輸入 /start-2-1 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, Task]
 ---
 
 ## Setup
@@ -166,7 +167,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用可用的檔案工具
 
 既然互不相干，就不用排隊等。我現在同時派幾個『助手』，各自負責一批學生，一起寫——」
 
-**Action:** 同時展開 3 個並行的處理流程，分別負責 S005–S011、S012–S018、S020–S025（Step 5 已完成的 S019、S001–S004 不重派），依相同的框架與語氣規則平行產出剩餘 20 封家長信；等全部回報後彙整成 25 封的完整清單。
+**Action:** 用 Task 工具同時派出 3 個子代理，分別負責 S005–S011、S012–S018、S020–S025（Step 5 已完成的 S019、S001–S004 不重派），依相同的框架與語氣規則平行產出剩餘 20 封家長信；等全部回報後彙整成 25 封的完整清單。 <!-- gate:allow harness-sync user-requested coverage -->
 
 **Present it like this:**
 

@@ -1,6 +1,7 @@
 ---
 name: start-1-5
 description: "課程 1-5：AI 碰不到你的資料——找到能力邊界，換路前行。學員說「開始 1-5」「上 1-5」「開始第五課」或輸入 /start-1-5 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, WebSearch]
 ---
 
 ## Setup

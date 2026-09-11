@@ -1,15 +1,16 @@
 ---
 name: start-5-3
 description: "課程 5-3：做一個你自己的班級小工具。學員說「開始 5-3」「上 5-3」「開始第十九課」或輸入 /start-5-3 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup
 
 Read `.codex/skills/_shared/teaching-rules.md` and follow it for everything below.
 
-!`cp -rn "${CLAUDE_SKILL_DIR}/assets/." . 2>/dev/null || true`
+!`cp -rn "${CODEX_SKILL_DIR}/assets/." . 2>/dev/null || true`
 
-ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CLAUDE_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CODEX_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 5-3：做一個你自己的班級小工具
 
@@ -59,7 +60,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 我的計畫是：
 
 1. 讀你班上的名單 `horizon-academy/student-roster.csv`
-2. 做一個檔案叫 `horizon-academy/班級點名器.html`，放在你的工作區
+2. 做一個檔案叫 `班級點名器.html`，放進 `horizon-academy/` 資料夾（**只放學生姓名，不放家長姓名和電話**）
 3. 我幫你打開，會跳出一個瀏覽器視窗，中間一個大按鈕
 4. 按一下抽一個名字出來，抽過的人這一輪不會再被抽到
 5. 抽完全班會告訴你「這一輪抽完了」，可以重來
@@ -76,14 +77,17 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 ### Step 3：動手做
 
-**Action:** Read `horizon-academy/student-roster.csv` 取得學生姓名，依 Step 2 學生確認的規格（含她提出的任何修改）寫出 `horizon-academy/班級點名器.html`。要求：單一檔案、不引用任何外部資源、**只取姓名欄**（家長姓名與電話一律不得寫入）、名單直接寫進檔案裡、中文字體與大字級、抽過不重複、可重置。寫完後用 Bash 確認檔案存在並回報大小。
+**Action:** Read `horizon-academy/student-roster.csv`，**只取「姓名」這一欄**——那份檔案還有家長姓名與聯絡電話，**一律不得寫進 HTML**。依 Step 2 學生確認的規格（含她提出的任何修改）寫出 `horizon-academy/班級點名器.html`。要求：單一檔案、不引用任何外部資源、名單直接寫進檔案裡、中文字體與大字級、抽過不重複、可重置。寫完後確認檔案存在。 <!-- gate:allow harness-sync user-requested coverage -->
+   另回報檔案大小，並確認實際檔案位於 `horizon-academy/`。
+
+**Action:** 直接幫學員把檔案打開，不要叫她自己找：macOS 用 `open horizon-academy/班級點名器.html`，Windows 用 `Start-Process horizon-academy/班級點名器.html`。若指令不可用，才改為請她自己在檔案清單裡點開。
 
 **Present it like this:**
 
 ---
 **做好了：`horizon-academy/班級點名器.html`**
 
-- 名單：〈N〉位學生，來自 `horizon-academy/student-roster.csv`
+- 名單：〈N〉位學生的**姓名**，來自 `horizon-academy/student-roster.csv`（家長姓名與電話沒有寫進去）
 - 我已經幫你打開了，應該會跳出一個瀏覽器視窗
 - 這一輪抽過的人不會重複；抽完會提示可以重來
 〈若學生在 Step 2 提出修改，逐條列出已照做〉
@@ -104,7 +108,8 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 ### Step 4：依實際回饋修改一次
 
-**Action:** 依學生回報的問題修改 `horizon-academy/班級點名器.html`。若學生說沒問題，就問她一個具體的延伸需求（例如「要不要加上抽過的人名單顯示在下面」）並實作。**一定要有一次真的修改**，讓學生體驗到「講一句就會改」。
+**Action:** 依學生回報的問題修改 `班級點名器.html`。若學生說沒問題，就問她一個具體的延伸需求（例如「要不要加上抽過的人名單顯示在下面」）並實作。**一定要有一次真的修改**，讓學生體驗到「講一句就會改」。 <!-- gate:allow harness-sync user-requested coverage -->
+   Codex 實際檔案路徑是 `horizon-academy/班級點名器.html`。
 
 **Say:**
 
@@ -157,7 +162,8 @@ ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工
 
 ## 成功判準
 
-- 學員拿到一個能實際打開使用的 `horizon-academy/班級點名器.html`，名單來自真實 CSV
+- 學員拿到一個能實際打開使用的 `班級點名器.html`，名單來自真實 CSV <!-- gate:allow harness-sync user-requested coverage -->
+- 實際檔案位置：`horizon-academy/班級點名器.html`。
 - 學員在動手前經歷了一次完整的「先講計畫 → 確認 → 才動手」
 - 學員至少提出一次修改並看到它被實作
 - 學員知道自己全程沒看過程式碼，也知道這個檔案裡有學生名單

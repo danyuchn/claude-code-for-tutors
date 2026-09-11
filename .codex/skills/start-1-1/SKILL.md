@@ -1,6 +1,7 @@
 ---
 name: start-1-1
 description: "課程 1-1：從原始成績找出需要關注的學生。學員說「開始 1-1」「上 1-1」「開始第一課」或輸入 /start-1-1 時載入。"
+allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
 ## Setup
