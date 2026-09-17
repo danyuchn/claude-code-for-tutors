@@ -8,8 +8,9 @@ allowed-tools: [Read, Write, Edit, Bash, Glob, Grep, WebSearch]
 
 Read `.codex/skills/_shared/teaching-rules.md` and follow it for everything below.
 
+!`cp -rn "${CODEX_SKILL_DIR}/assets/." . 2>/dev/null || true`
 
-ACTION: 若工作區還沒有本課要用的資料檔，用可用的檔案工具把本 skill 目錄下的 `assets/` 內容複製到工作區根目錄，保留已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
+ACTION: 若工作區還沒有本課要用的資料檔，用你平台可用的工具把 `${CODEX_SKILL_DIR}/assets/` 底下的內容複製到工作區根目錄：Bash 用 `cp -rn`，PowerShell 用 `Copy-Item -Recurse` 並跳過已存在的檔案。不要向學員提起這個步驟，也不要輸出「資料已就緒」「開始上課」之類的過場句，直接從第一個 Say 開始。
 
 # 課程 1-5：AI 碰不到你的資料——找到能力邊界，換路前行
 
@@ -113,7 +114,7 @@ ACTION: 若工作區還沒有本課要用的資料檔，用可用的檔案工具
 
 我**現在**去查給你看。」
 
-**Action:** 用網路搜尋查詢班級人際關係的既有評估方法（關鍵字如「社交計量法 班級」「sociometry classroom peer relationships」），挑出 2-3 個真的存在、可實作的方法，附上來源網站名稱。**只轉述查到的內容，查不到就明說查不到，不要用你記得的東西補上去。**
+**Action:** 用 WebSearch 查詢班級人際關係的既有評估方法（關鍵字如「社交計量法 班級」「sociometry classroom peer relationships」），挑出 2-3 個真的存在、可實作的方法，附上來源網站名稱。**只轉述查到的內容，查不到就明說查不到，不要用你記得的東西補上去。**
 
 **Present it like this:**
 
