@@ -9,7 +9,7 @@
 >
 > 你是在做完自己的事的過程中學會工具，不是學完工具再回頭想怎麼用。
 >
-> 免費開源，專為零程式背景的教師設計。主線 24 堂 ＋ 選修 3 堂 / 約 8.8 小時。
+> 免費開源，專為零程式背景的教師設計。主線 24 堂 ＋ 選修 3 堂 / 約 8.9 小時。
 
 本課程的互動式教學框架改編自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)，經原作者同意。哪些沿用自原版、哪些是本課程原創，逐項列在[授權](#授權)。
 
@@ -107,7 +107,7 @@ claude
 | 5-2 | 讓班上的視覺看起來像同一個人做的 | [開始學習](.claude/skills/start-5-2/SKILL.md) |
 | 5-3 | 做一個你自己的班級小工具 | [開始學習](.claude/skills/start-5-3/SKILL.md) |
 
-### Module 4：自動化你的教學工作流（5 課，約 126 分鐘）
+### Module 4：自動化你的教學工作流（5 課，約 129 分鐘）
 
 | 課號 | 課程名稱 | 連結 |
 |------|----------|------|
@@ -141,6 +141,8 @@ claude
 - [Module 2：老師的日常任務](modules/module-2-daily-tasks/)
 - [Module 3：數據讓教學更聰明](modules/module-3-data-analysis/)
 - [Module 4：自動化你的教學工作流](modules/module-4-automation/)
+
+其中 1-3、1-5、2-2、2-3、3-1、3-3 這六堂的拍攝腳本主題與產出已和互動版不同（`course-structure.json` 標 `appendixDiverged: true`），拍片前要先依互動版改寫；其餘各堂大致對得上。
 
 Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝腳本。
 
@@ -193,7 +195,7 @@ Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝
 >
 > You learn the tool while getting your own work done, not before it.
 >
-> Free and open-source, built for teachers with zero programming background. 24 core lessons + 3 optional / about 8.8 hours.
+> Free and open-source, built for teachers with zero programming background. 24 core lessons + 3 optional / about 8.9 hours.
 
 The interactive teaching framework is adapted, with the original author's permission, from [Carl Vellotti](https://x.com/carlvellotti)'s open-source course [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course). What is carried over and what is original to this course is listed item by item under [License](#license).
 
@@ -249,7 +251,7 @@ After each lesson, run `/clear` before starting the next one.
 | 2 | Daily Teacher Tasks | 6 | ~118 min |
 | 3 | Data-Driven Teaching | 5 | ~76 min |
 | 5 | Making Things You Can See | 3 | ~60 min |
-| 4 | Automate Your Teaching Workflow | 5 | ~126 min |
+| 4 | Automate Your Teaching Workflow | 5 | ~129 min |
 | — | *Optional lessons (outside the main track)* | 3 | ~75 min |
 
 **Optional lessons** cover the three capabilities the original teaches but the main track deliberately leaves out, because each carries a cost the main track promises not to impose. Skipping them costs you nothing in the main track; each one ends by pointing you back to wherever you left off.
@@ -268,6 +270,8 @@ The `modules/` folder keeps this course's earlier shooting scripts (a reading-on
 - [Module 2: Daily Teacher Tasks](modules/module-2-daily-tasks/)
 - [Module 3: Data-Driven Teaching](modules/module-3-data-analysis/)
 - [Module 4: Automate Your Teaching Workflow](modules/module-4-automation/)
+
+Lessons 1-3, 1-5, 2-2, 2-3, 3-1 and 3-3 have shooting scripts whose topic and deliverable no longer match the interactive version (flagged `appendixDiverged: true` in `course-structure.json`); rewrite them against the interactive lesson before filming. The rest still roughly line up.
 
 ## License
 
