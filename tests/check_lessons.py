@@ -76,30 +76,69 @@ def check_1_1():
 
     declining = {sid for sid, vals in scores.items() if is_declining(vals)}
 
-    # Rule stated in SKILL.md Step 3: declining AND (satisfaction <= 3 OR
-    # parent left a comment at all).
-    rule_priority = set()
-    for sid in declining:
-        row = survey[sid]
-        satisfaction = int(row["滿意度(1-5)"])
-        comment = row["開放填答"].strip()
-        if satisfaction <= 3 or comment:
-            rule_priority.add(sid)
+    # Rule stated in SKILL.md Step 3: declining AND (satisfaction <= 3 OR the
+    # comment *explicitly* raises a concern). "Explicitly negative" is semantic,
+    # so it is not recomputed here; instead the checks below pin down every part
+    # of the rule that is mechanical:
+    #   - every declining student with satisfaction <= 3 must be in the priority table
+    #   - every priority row must be declining and carry some parent signal
+    #   - every "next week" row must be declining and NOT in the priority table
+    #   - trend / satisfaction / quoted comment cells must match the CSVs verbatim
+    must_priority = {
+        sid for sid in declining if int(survey[sid]["滿意度(1-5)"]) <= 3
+    }
 
-    block = extract_between(skill, "**本週優先關注**", "**下週留意**")
-    table_priority = {r["學號"] for r in parse_md_table(block)}
+    def trend(sid):
+        return "→".join(str(v) for v in scores[sid])
 
-    if rule_priority != table_priority:
-        missing = sorted(rule_priority - table_priority)
-        extra = sorted(table_priority - rule_priority)
+    priority_rows = parse_md_table(
+        extract_between(skill, "**本週優先關注**", "**下週留意**")
+    )
+    watch_rows = parse_md_table(
+        extract_between(skill, "**下週留意**", "**Say:**")
+    )
+    table_priority = {r["學號"] for r in priority_rows}
+
+    missing = sorted(must_priority - table_priority)
+    if missing:
         issues.append(
-            "1-1 Step3「本週優先關注」表格與規則算出的結果不一致："
-            f"規則（成績連續下滑 + 滿意度<=3 或有家長留言）算出 {sorted(rule_priority)}"
-            f"（共 {len(rule_priority)} 位），示範表格只列出 {sorted(table_priority)}"
-            f"（共 {len(table_priority)} 位）。"
-            + (f" 表格漏列：{missing}。" if missing else "")
-            + (f" 表格多列：{extra}。" if extra else "")
+            f"1-1 Step3「本週優先關注」漏列成績下滑且滿意度<=3 的學生：{missing}"
         )
+
+    for r in priority_rows:
+        sid = r["學號"]
+        row = survey.get(sid)
+        if sid not in declining or row is None:
+            issues.append(f"1-1「本週優先關注」列了 {sid}，但他不是三次月考連續下滑")
+            continue
+        if int(row["滿意度(1-5)"]) > 3 and not row["開放填答"].strip():
+            issues.append(f"1-1「本週優先關注」列了 {sid}，但家長既沒低分也沒留言")
+        if r["成績趨勢"] != trend(sid):
+            issues.append(f"1-1 {sid} 成績趨勢寫 {r['成績趨勢']}，資料是 {trend(sid)}")
+        if r["家長滿意度"] != f"{row['滿意度(1-5)']}分":
+            issues.append(
+                f"1-1 {sid} 滿意度寫 {r['家長滿意度']}，資料是 {row['滿意度(1-5)']}分"
+            )
+        quoted = r["家長說了什麼"].strip("「」")
+        if quoted != row["開放填答"].strip():
+            issues.append(
+                f"1-1 {sid} 家長引言寫「{quoted}」，問卷原文是「{row['開放填答'].strip()}」"
+            )
+
+    for r in watch_rows:
+        sid = r["學號"]
+        if sid not in declining:
+            issues.append(f"1-1「下週留意」列了 {sid}，但他不是三次月考連續下滑")
+        if sid in table_priority:
+            issues.append(f"1-1 {sid} 同時出現在「本週優先關注」與「下週留意」")
+        elif r["成績趨勢"] != trend(sid):
+            issues.append(f"1-1 {sid} 成績趨勢寫 {r['成績趨勢']}，資料是 {trend(sid)}")
+        m = re.search(r"「(.+?)」", r.get("備註", ""))
+        if m and m.group(1) != survey[sid]["開放填答"].strip():
+            issues.append(
+                f"1-1 {sid} 備註引言「{m.group(1)}」與問卷原文"
+                f"「{survey[sid]['開放填答'].strip()}」不一致"
+            )
     return issues
 
 
