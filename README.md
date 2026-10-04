@@ -146,6 +146,10 @@ claude
 
 Module 5（做出看得見的東西）是後來新增的，沒有對應的拍攝腳本。
 
+## 路線圖
+
+- **英文版（規劃中，時程未定）**：規劃翻譯互動教學腳本、共用教學規則與練習素材；目前已有英文 README，完整課程仍以繁體中文為主。需求與範圍追蹤於 [issue #1](https://github.com/danyuchn/claude-code-for-tutors/issues/1)。
+
 ## 授權
 
 本課程的互動式教學框架參考自 [Carl Vellotti](https://x.com/carlvellotti) 的開源課程 [Claude Code for Product Managers](https://github.com/carlvellotti/claude-code-pm-course)（CC BY-NC-ND 4.0）。
@@ -272,6 +276,10 @@ The `modules/` folder keeps this course's earlier shooting scripts (a reading-on
 - [Module 4: Automate Your Teaching Workflow](modules/module-4-automation/)
 
 Lessons 1-3, 1-5, 2-2, 2-3, 3-1 and 3-3 have shooting scripts whose topic and deliverable no longer match the interactive version (flagged `appendixDiverged: true` in `course-structure.json`); rewrite them against the interactive lesson before filming. The rest still roughly line up.
+
+## Roadmap
+
+- **English edition (planned; no release date yet)**: Translate the interactive lesson scripts, shared teaching rules, and practice materials. The README is already bilingual; the full course is currently primarily in Traditional Chinese. Scope and requests are tracked in [issue #1](https://github.com/danyuchn/claude-code-for-tutors/issues/1).
 
 ## License
 
