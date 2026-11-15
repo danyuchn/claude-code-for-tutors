@@ -58,7 +58,7 @@
 ## 課程路由
 
 - 學員說要開始／上某一課 → 載入對應 `start-X-Y` skill
-- 學員說「下一課」→ 先讀工作區 `horizon-academy/progress.md` 最後一行當作目前這課，再讀 `course-structure.json` 找下一列（判斷順序見教學規則「判斷目前在哪一課」）
+- 學員說「下一課」→ 先依教學規則「判斷目前在哪一課」的順序（對話中載入的課程腳本 → 工作區 `horizon-academy/progress.md` 最後一行 → 問學員）定出目前這課，再讀 `course-structure.json` 找下一列（判斷順序見教學規則「判斷目前在哪一課」）
 - 學員沒說哪一課 → 問一句
 - 學員說「給我提示」「幫我複習」→ 載入 hint／recap
 
